@@ -1,0 +1,445 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		1DDD58160DA1D0A300B32029 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1DDD58140DA1D0A300B32029 /* MainMenu.xib */; };
+		8D11072B0486CEB800E47090 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 089C165CFE840E0CC02AAC07 /* InfoPlist.strings */; };
+		8D11072D0486CEB800E47090 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 29B97316FDCFA39411CA2CEA /* main.m */; settings = {ATTRIBUTES = (); }; };
+		8D11072F0486CEB800E47090 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1058C7A1FEA54F0111CA2CBB /* Cocoa.framework */; };
+		93B74B8511EB3BFD00A49D8A /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 93B74B8311EB3BFD00A49D8A /* AppDelegate.m */; };
+		93E74DE911EC3C0A00D9F803 /* DraggingNotification.m in Sources */ = {isa = PBXBuildFile; fileRef = 93E74DE811EC3C0A00D9F803 /* DraggingNotification.m */; };
+		93E74DED11EC3C5200D9F803 /* ViewManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 93E74DEC11EC3C5200D9F803 /* ViewManager.m */; };
+		93E74DF011EC3C9500D9F803 /* ViewManager-NSNotification.m in Sources */ = {isa = PBXBuildFile; fileRef = 93E74DEF11EC3C9500D9F803 /* ViewManager-NSNotification.m */; };
+		93E74E0D11EC42C800D9F803 /* DraggingView.m in Sources */ = {isa = PBXBuildFile; fileRef = 93E74E0C11EC42C800D9F803 /* DraggingView.m */; };
+		93E74E1011EC42EB00D9F803 /* DraggingView-NSDraggingDestination.m in Sources */ = {isa = PBXBuildFile; fileRef = 93E74E0F11EC42EB00D9F803 /* DraggingView-NSDraggingDestination.m */; };
+		93E74E2B11EC453200D9F803 /* DraggingView-DraggingViewProtocol.m in Sources */ = {isa = PBXBuildFile; fileRef = 93E74E2A11EC453200D9F803 /* DraggingView-DraggingViewProtocol.m */; };
+		93E74E3611EC485D00D9F803 /* DraggingImageView.m in Sources */ = {isa = PBXBuildFile; fileRef = 93E74E3511EC485D00D9F803 /* DraggingImageView.m */; };
+		93E74E3911EC489C00D9F803 /* DraggingImageView-NSDraggingDestination.m in Sources */ = {isa = PBXBuildFile; fileRef = 93E74E3811EC489C00D9F803 /* DraggingImageView-NSDraggingDestination.m */; };
+		93E74E3C11EC48CD00D9F803 /* DraggingImageView-DraggingViewProtocol.m in Sources */ = {isa = PBXBuildFile; fileRef = 93E74E3B11EC48CD00D9F803 /* DraggingImageView-DraggingViewProtocol.m */; };
+		93E74E4111EC4A6E00D9F803 /* DraggingImageView-NSNotification.m in Sources */ = {isa = PBXBuildFile; fileRef = 93E74E4011EC4A6E00D9F803 /* DraggingImageView-NSNotification.m */; };
+		93E74EF311EC587600D9F803 /* DraggingView-NSNotification.m in Sources */ = {isa = PBXBuildFile; fileRef = 93E74EF211EC587600D9F803 /* DraggingView-NSNotification.m */; };
+		93E74F5D11EC63B100D9F803 /* Icons.plist in Resources */ = {isa = PBXBuildFile; fileRef = 93E74F5C11EC63B100D9F803 /* Icons.plist */; };
+		93E750F511EC9C5600D9F803 /* NSBitmapImageRep-Additions.m in Sources */ = {isa = PBXBuildFile; fileRef = 93E750F411EC9C5600D9F803 /* NSBitmapImageRep-Additions.m */; };
+		93E751F311ECB31900D9F803 /* IconUtility.icns in Resources */ = {isa = PBXBuildFile; fileRef = 93E751F211ECB31900D9F803 /* IconUtility.icns */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		089C165DFE840E0CC02AAC07 /* English */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.strings; name = English; path = English.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		1058C7A1FEA54F0111CA2CBB /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = /System/Library/Frameworks/Cocoa.framework; sourceTree = "<absolute>"; };
+		13E42FB307B3F0F600E4EEF1 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = /System/Library/Frameworks/CoreData.framework; sourceTree = "<absolute>"; };
+		1DDD58150DA1D0A300B32029 /* English */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = English; path = English.lproj/MainMenu.xib; sourceTree = "<group>"; };
+		256AC3F00F4B6AF500CF3369 /* Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Prefix.pch; sourceTree = "<group>"; };
+		29B97316FDCFA39411CA2CEA /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		29B97324FDCFA39411CA2CEA /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = /System/Library/Frameworks/AppKit.framework; sourceTree = "<absolute>"; };
+		29B97325FDCFA39411CA2CEA /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = /System/Library/Frameworks/Foundation.framework; sourceTree = "<absolute>"; };
+		8D1107310486CEB800E47090 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8D1107320486CEB800E47090 /* IconUtility.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = IconUtility.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		93B74B8211EB3BFD00A49D8A /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		93B74B8311EB3BFD00A49D8A /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		93E74DE711EC3C0A00D9F803 /* DraggingNotification.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DraggingNotification.h; sourceTree = "<group>"; };
+		93E74DE811EC3C0A00D9F803 /* DraggingNotification.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DraggingNotification.m; sourceTree = "<group>"; };
+		93E74DEB11EC3C5200D9F803 /* ViewManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewManager.h; sourceTree = "<group>"; };
+		93E74DEC11EC3C5200D9F803 /* ViewManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewManager.m; sourceTree = "<group>"; };
+		93E74DEE11EC3C9500D9F803 /* ViewManager-NSNotification.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "ViewManager-NSNotification.h"; sourceTree = "<group>"; };
+		93E74DEF11EC3C9500D9F803 /* ViewManager-NSNotification.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "ViewManager-NSNotification.m"; sourceTree = "<group>"; };
+		93E74DF211EC402B00D9F803 /* DraggingViewProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DraggingViewProtocol.h; sourceTree = "<group>"; };
+		93E74E0B11EC42C800D9F803 /* DraggingView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DraggingView.h; sourceTree = "<group>"; };
+		93E74E0C11EC42C800D9F803 /* DraggingView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DraggingView.m; sourceTree = "<group>"; };
+		93E74E0E11EC42EB00D9F803 /* DraggingView-NSDraggingDestination.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "DraggingView-NSDraggingDestination.h"; sourceTree = "<group>"; };
+		93E74E0F11EC42EB00D9F803 /* DraggingView-NSDraggingDestination.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "DraggingView-NSDraggingDestination.m"; sourceTree = "<group>"; };
+		93E74E2911EC453200D9F803 /* DraggingView-DraggingViewProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "DraggingView-DraggingViewProtocol.h"; sourceTree = "<group>"; };
+		93E74E2A11EC453200D9F803 /* DraggingView-DraggingViewProtocol.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "DraggingView-DraggingViewProtocol.m"; sourceTree = "<group>"; };
+		93E74E3411EC485D00D9F803 /* DraggingImageView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DraggingImageView.h; sourceTree = "<group>"; };
+		93E74E3511EC485D00D9F803 /* DraggingImageView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DraggingImageView.m; sourceTree = "<group>"; };
+		93E74E3711EC489C00D9F803 /* DraggingImageView-NSDraggingDestination.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "DraggingImageView-NSDraggingDestination.h"; sourceTree = "<group>"; };
+		93E74E3811EC489C00D9F803 /* DraggingImageView-NSDraggingDestination.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "DraggingImageView-NSDraggingDestination.m"; sourceTree = "<group>"; };
+		93E74E3A11EC48CD00D9F803 /* DraggingImageView-DraggingViewProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "DraggingImageView-DraggingViewProtocol.h"; sourceTree = "<group>"; };
+		93E74E3B11EC48CD00D9F803 /* DraggingImageView-DraggingViewProtocol.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "DraggingImageView-DraggingViewProtocol.m"; sourceTree = "<group>"; };
+		93E74E3F11EC4A6E00D9F803 /* DraggingImageView-NSNotification.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "DraggingImageView-NSNotification.h"; sourceTree = "<group>"; };
+		93E74E4011EC4A6E00D9F803 /* DraggingImageView-NSNotification.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "DraggingImageView-NSNotification.m"; sourceTree = "<group>"; };
+		93E74EF111EC587600D9F803 /* DraggingView-NSNotification.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "DraggingView-NSNotification.h"; sourceTree = "<group>"; };
+		93E74EF211EC587600D9F803 /* DraggingView-NSNotification.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "DraggingView-NSNotification.m"; sourceTree = "<group>"; };
+		93E74F5C11EC63B100D9F803 /* Icons.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Icons.plist; sourceTree = "<group>"; };
+		93E750F311EC9C5600D9F803 /* NSBitmapImageRep-Additions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSBitmapImageRep-Additions.h"; sourceTree = "<group>"; };
+		93E750F411EC9C5600D9F803 /* NSBitmapImageRep-Additions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSBitmapImageRep-Additions.m"; sourceTree = "<group>"; };
+		93E751F211ECB31900D9F803 /* IconUtility.icns */ = {isa = PBXFileReference; lastKnownFileType = image.icns; path = IconUtility.icns; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		8D11072E0486CEB800E47090 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8D11072F0486CEB800E47090 /* Cocoa.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		1058C7A0FEA54F0111CA2CBB /* Linked Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				1058C7A1FEA54F0111CA2CBB /* Cocoa.framework */,
+			);
+			name = "Linked Frameworks";
+			sourceTree = "<group>";
+		};
+		1058C7A2FEA54F0111CA2CBB /* Other Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				29B97324FDCFA39411CA2CEA /* AppKit.framework */,
+				13E42FB307B3F0F600E4EEF1 /* CoreData.framework */,
+				29B97325FDCFA39411CA2CEA /* Foundation.framework */,
+			);
+			name = "Other Frameworks";
+			sourceTree = "<group>";
+		};
+		19C28FACFE9D520D11CA2CBB /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				8D1107320486CEB800E47090 /* IconUtility.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		29B97314FDCFA39411CA2CEA /* IconUtility */ = {
+			isa = PBXGroup;
+			children = (
+				93B74B8011EB3BFD00A49D8A /* Classes */,
+				29B97315FDCFA39411CA2CEA /* Other Sources */,
+				29B97317FDCFA39411CA2CEA /* Resources */,
+				29B97323FDCFA39411CA2CEA /* Frameworks */,
+				19C28FACFE9D520D11CA2CBB /* Products */,
+			);
+			name = IconUtility;
+			sourceTree = "<group>";
+		};
+		29B97315FDCFA39411CA2CEA /* Other Sources */ = {
+			isa = PBXGroup;
+			children = (
+				256AC3F00F4B6AF500CF3369 /* Prefix.pch */,
+				29B97316FDCFA39411CA2CEA /* main.m */,
+			);
+			name = "Other Sources";
+			sourceTree = "<group>";
+		};
+		29B97317FDCFA39411CA2CEA /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				93E751F211ECB31900D9F803 /* IconUtility.icns */,
+				8D1107310486CEB800E47090 /* Info.plist */,
+				089C165CFE840E0CC02AAC07 /* InfoPlist.strings */,
+				1DDD58140DA1D0A300B32029 /* MainMenu.xib */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		29B97323FDCFA39411CA2CEA /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				1058C7A0FEA54F0111CA2CBB /* Linked Frameworks */,
+				1058C7A2FEA54F0111CA2CBB /* Other Frameworks */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		93B74B8011EB3BFD00A49D8A /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				93E750F211EC9C4300D9F803 /* NSBitmapImageRep-Additions */,
+				93E74E3311EC485300D9F803 /* DraggingImageView */,
+				93E74E0A11EC42B200D9F803 /* DraggingView */,
+				93E74DF111EC3FF200D9F803 /* DraggingViewProtocol */,
+				93E74DEA11EC3C4A00D9F803 /* ViewManager */,
+				93E74DE611EC3C0000D9F803 /* DraggingNotification */,
+				93B74B8111EB3BFD00A49D8A /* AppDelegate */,
+				93B74B8411EB3BFD00A49D8A /* Libs */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		93B74B8111EB3BFD00A49D8A /* AppDelegate */ = {
+			isa = PBXGroup;
+			children = (
+				93B74B8211EB3BFD00A49D8A /* AppDelegate.h */,
+				93B74B8311EB3BFD00A49D8A /* AppDelegate.m */,
+			);
+			path = AppDelegate;
+			sourceTree = "<group>";
+		};
+		93B74B8411EB3BFD00A49D8A /* Libs */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Libs;
+			sourceTree = "<group>";
+		};
+		93E74DE611EC3C0000D9F803 /* DraggingNotification */ = {
+			isa = PBXGroup;
+			children = (
+				93E74DE711EC3C0A00D9F803 /* DraggingNotification.h */,
+				93E74DE811EC3C0A00D9F803 /* DraggingNotification.m */,
+			);
+			path = DraggingNotification;
+			sourceTree = "<group>";
+		};
+		93E74DEA11EC3C4A00D9F803 /* ViewManager */ = {
+			isa = PBXGroup;
+			children = (
+				93E74F5B11EC626700D9F803 /* Resources */,
+				93E74DEB11EC3C5200D9F803 /* ViewManager.h */,
+				93E74DEC11EC3C5200D9F803 /* ViewManager.m */,
+				93E74DEE11EC3C9500D9F803 /* ViewManager-NSNotification.h */,
+				93E74DEF11EC3C9500D9F803 /* ViewManager-NSNotification.m */,
+			);
+			path = ViewManager;
+			sourceTree = "<group>";
+		};
+		93E74DF111EC3FF200D9F803 /* DraggingViewProtocol */ = {
+			isa = PBXGroup;
+			children = (
+				93E74DF211EC402B00D9F803 /* DraggingViewProtocol.h */,
+			);
+			path = DraggingViewProtocol;
+			sourceTree = "<group>";
+		};
+		93E74E0A11EC42B200D9F803 /* DraggingView */ = {
+			isa = PBXGroup;
+			children = (
+				93E74E0B11EC42C800D9F803 /* DraggingView.h */,
+				93E74E0C11EC42C800D9F803 /* DraggingView.m */,
+				93E74E0E11EC42EB00D9F803 /* DraggingView-NSDraggingDestination.h */,
+				93E74E0F11EC42EB00D9F803 /* DraggingView-NSDraggingDestination.m */,
+				93E74E2911EC453200D9F803 /* DraggingView-DraggingViewProtocol.h */,
+				93E74E2A11EC453200D9F803 /* DraggingView-DraggingViewProtocol.m */,
+				93E74EF111EC587600D9F803 /* DraggingView-NSNotification.h */,
+				93E74EF211EC587600D9F803 /* DraggingView-NSNotification.m */,
+			);
+			path = DraggingView;
+			sourceTree = "<group>";
+		};
+		93E74E3311EC485300D9F803 /* DraggingImageView */ = {
+			isa = PBXGroup;
+			children = (
+				93E74E3411EC485D00D9F803 /* DraggingImageView.h */,
+				93E74E3511EC485D00D9F803 /* DraggingImageView.m */,
+				93E74E3711EC489C00D9F803 /* DraggingImageView-NSDraggingDestination.h */,
+				93E74E3811EC489C00D9F803 /* DraggingImageView-NSDraggingDestination.m */,
+				93E74E3A11EC48CD00D9F803 /* DraggingImageView-DraggingViewProtocol.h */,
+				93E74E3B11EC48CD00D9F803 /* DraggingImageView-DraggingViewProtocol.m */,
+				93E74E3F11EC4A6E00D9F803 /* DraggingImageView-NSNotification.h */,
+				93E74E4011EC4A6E00D9F803 /* DraggingImageView-NSNotification.m */,
+			);
+			path = DraggingImageView;
+			sourceTree = "<group>";
+		};
+		93E74F5B11EC626700D9F803 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				93E74F5C11EC63B100D9F803 /* Icons.plist */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		93E750F211EC9C4300D9F803 /* NSBitmapImageRep-Additions */ = {
+			isa = PBXGroup;
+			children = (
+				93E750F311EC9C5600D9F803 /* NSBitmapImageRep-Additions.h */,
+				93E750F411EC9C5600D9F803 /* NSBitmapImageRep-Additions.m */,
+			);
+			path = "NSBitmapImageRep-Additions";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		8D1107260486CEB800E47090 /* IconUtility */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C01FCF4A08A954540054247B /* Build configuration list for PBXNativeTarget "IconUtility" */;
+			buildPhases = (
+				8D1107290486CEB800E47090 /* Resources */,
+				8D11072C0486CEB800E47090 /* Sources */,
+				8D11072E0486CEB800E47090 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = IconUtility;
+			productInstallPath = "$(HOME)/Applications";
+			productName = IconUtility;
+			productReference = 8D1107320486CEB800E47090 /* IconUtility.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		29B97313FDCFA39411CA2CEA /* Project object */ = {
+			isa = PBXProject;
+			buildConfigurationList = C01FCF4E08A954540054247B /* Build configuration list for PBXProject "IconUtility" */;
+			compatibilityVersion = "Xcode 3.2";
+			hasScannedForEncodings = 1;
+			mainGroup = 29B97314FDCFA39411CA2CEA /* IconUtility */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				8D1107260486CEB800E47090 /* IconUtility */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		8D1107290486CEB800E47090 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8D11072B0486CEB800E47090 /* InfoPlist.strings in Resources */,
+				1DDD58160DA1D0A300B32029 /* MainMenu.xib in Resources */,
+				93E74F5D11EC63B100D9F803 /* Icons.plist in Resources */,
+				93E751F311ECB31900D9F803 /* IconUtility.icns in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		8D11072C0486CEB800E47090 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8D11072D0486CEB800E47090 /* main.m in Sources */,
+				93B74B8511EB3BFD00A49D8A /* AppDelegate.m in Sources */,
+				93E74DE911EC3C0A00D9F803 /* DraggingNotification.m in Sources */,
+				93E74DED11EC3C5200D9F803 /* ViewManager.m in Sources */,
+				93E74DF011EC3C9500D9F803 /* ViewManager-NSNotification.m in Sources */,
+				93E74E0D11EC42C800D9F803 /* DraggingView.m in Sources */,
+				93E74E1011EC42EB00D9F803 /* DraggingView-NSDraggingDestination.m in Sources */,
+				93E74E2B11EC453200D9F803 /* DraggingView-DraggingViewProtocol.m in Sources */,
+				93E74E3611EC485D00D9F803 /* DraggingImageView.m in Sources */,
+				93E74E3911EC489C00D9F803 /* DraggingImageView-NSDraggingDestination.m in Sources */,
+				93E74E3C11EC48CD00D9F803 /* DraggingImageView-DraggingViewProtocol.m in Sources */,
+				93E74E4111EC4A6E00D9F803 /* DraggingImageView-NSNotification.m in Sources */,
+				93E74EF311EC587600D9F803 /* DraggingView-NSNotification.m in Sources */,
+				93E750F511EC9C5600D9F803 /* NSBitmapImageRep-Additions.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		089C165CFE840E0CC02AAC07 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				089C165DFE840E0CC02AAC07 /* English */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		1DDD58140DA1D0A300B32029 /* MainMenu.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				1DDD58150DA1D0A300B32029 /* English */,
+			);
+			name = MainMenu.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		C01FCF4B08A954540054247B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = NO;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_FIX_AND_CONTINUE = YES;
+				GCC_MODEL_TUNING = G5;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = Prefix.pch;
+				INFOPLIST_FILE = Info.plist;
+				INSTALL_PATH = "$(HOME)/Applications";
+				PRODUCT_NAME = IconUtility;
+			};
+			name = Debug;
+		};
+		C01FCF4C08A954540054247B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_MODEL_TUNING = G5;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = Prefix.pch;
+				INFOPLIST_FILE = Info.plist;
+				INSTALL_PATH = "$(HOME)/Applications";
+				PRODUCT_NAME = IconUtility;
+			};
+			name = Release;
+		};
+		C01FCF4F08A954540054247B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				OTHER_LDFLAGS = (
+					"-all_load",
+					"-ObjC",
+				);
+				PREBINDING = NO;
+				RUN_CLANG_STATIC_ANALYZER = YES;
+				SDKROOT = macosx10.6;
+			};
+			name = Debug;
+		};
+		C01FCF5008A954540054247B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				OTHER_LDFLAGS = (
+					"-all_load",
+					"-ObjC",
+				);
+				PREBINDING = NO;
+				SDKROOT = macosx10.6;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		C01FCF4A08A954540054247B /* Build configuration list for PBXNativeTarget "IconUtility" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C01FCF4B08A954540054247B /* Debug */,
+				C01FCF4C08A954540054247B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C01FCF4E08A954540054247B /* Build configuration list for PBXProject "IconUtility" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C01FCF4F08A954540054247B /* Debug */,
+				C01FCF5008A954540054247B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 29B97313FDCFA39411CA2CEA /* Project object */;
+}

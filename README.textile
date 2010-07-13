@@ -1,0 +1,15 @@
+h1. IconUtility
+
+The app resizes images into the following iPhone/iPad related icon size;
+
+* Icon.png - 57x57 pixels iPhone app icon.
+* Icon@2x.png - 114x114 pixels iPhone app in high resolution.
+* Icon-72.png - 72x72 pixels iPad icon.
+* Icon-Small.png - 29x29 pixels iPhone settings icon.
+* Icon-Small@2x.png - 58x58 pixels iPhone settings icon in high resolution.
+* Icon-Small-50.png - 50x50 iPad settings icon.
+
+h2. Contact
+
+* "http://blog.boreal-kiss.net/":http://blog.boreal-kiss.net/
+* "http://twitter.com/borealkiss":http://twitter.com/borealkiss
