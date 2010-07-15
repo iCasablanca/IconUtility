@@ -8,25 +8,19 @@
 
 #import "ViewManager.h"
 #import "ViewManager-NSNotification.h"
-#import "DraggingViewProtocol.h"
 #import "DraggingImageView.h"
-#import "NSBitmapImageRep-Additions.h"
 
 //Private
-static NSString * const IconsFileName	= @"Icons";
-static NSString * const IconsFileType	= @"plist";
-static NSString * const IconsNameKey	= @"Name";
-static NSString * const IconsSizeKey	= @"Size";
-static NSString * const IconsTagKey		= @"Tag";
-static NSString * const DefaultDirectoryName = @"com.borealkiss.IconUtility";
+static NSString * const IconsFileName			= @"Icons";
+static NSString * const IconsFileType			= @"plist";
+static NSString * const IconsNameKey			= @"Name";
+static NSString * const IconsSizeKey			= @"Size";
+static NSString * const IconsTagKey				= @"Tag";
  
 //Private
 @interface ViewManager ()
 -(void)_setup;
 -(void)_setupChildviews;
--(NSString *)_filePathWithFileName:(NSString *)fileName;
--(void)_didSave;
--(void)_saveDidFail;
 @end
 
 @implementation ViewManager
@@ -40,24 +34,6 @@ static NSString * const DefaultDirectoryName = @"com.borealkiss.IconUtility";
 		[self _setup];
 	}
 	return self;
-}
-
--(void)saveImages{
-	//NSLog(@"%s", __FUNCTION__);
-	
-	for (DraggingImageView *aView in self.childViews){
-		if ([aView targetImage] == nil) {
-			[self performSelector:@selector(_saveDidFail) withObject:nil afterDelay:0.0];
-			return;
-		}
-		
-		NSBitmapImageRep *imageRep = [NSBitmapImageRep imageRepWithPixelsWide:aView.imageWidth pixelsHigh:aView.imageHeight hasAlpha:YES];
-		[imageRep setImage:aView.image];
-		NSData *imageData = [imageRep representationUsingType:NSPNGFileType properties:nil];
-		[imageData writeToFile:[self _filePathWithFileName:aView.imageName] atomically:YES];
-	}
-	
-	[self performSelector:@selector(_didSave) withObject:nil afterDelay:0.0];
 }
 
 -(void)dealloc{
@@ -100,25 +76,6 @@ static NSString * const DefaultDirectoryName = @"com.borealkiss.IconUtility";
 	}
 	
 	self.childViews = mutableArray;
-}
-
--(NSString *)_filePathWithFileName:(NSString *)fileName{
-	NSString *pathToDesktop = [NSSearchPathForDirectoriesInDomains(NSDesktopDirectory, NSUserDomainMask, YES) lastObject];
-	NSString *destination = [pathToDesktop stringByAppendingPathComponent:DefaultDirectoryName];
-	
-	if ([[NSFileManager defaultManager] fileExistsAtPath:destination] == NO){
-		[[NSFileManager defaultManager] createDirectoryAtPath:destination withIntermediateDirectories:NO attributes:nil error:nil];
-	}
-	
-	return [destination stringByAppendingPathComponent:fileName];
-}
-
--(void)_didSave{
-	NSRunAlertPanel(@"Saved", @"Images successfully saved to the desktop.", @"OK", nil, nil);
-}
-
--(void)_saveDidFail{
-	NSRunAlertPanel(@"Error", @"Drag images on the window.", @"OK", nil, nil);
 }
 
 @end

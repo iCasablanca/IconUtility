@@ -9,7 +9,10 @@
 #import <Cocoa/Cocoa.h>
 #import "DraggingImageView.h"
 
-@interface DraggingImageView (NSNotification)
+/**
+ * Private.
+ */
+@interface DraggingImageView (_NSNotification)
 
 -(void)_postNotificationWithNotificationName:(NSString *)aName;
 @end

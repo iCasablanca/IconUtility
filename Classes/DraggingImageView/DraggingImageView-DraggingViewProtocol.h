@@ -9,6 +9,9 @@
 #import <Cocoa/Cocoa.h>
 #import "DraggingImageView.h"
 
+/**
+ * The category for DraggingViewProtocol.
+ */
 @interface DraggingImageView (DraggingViewProtocol)
 
 @end

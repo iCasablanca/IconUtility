@@ -8,6 +8,7 @@
 
 #import "NSBitmapImageRep-Additions.h"
 
+//Private
 static const NSInteger DefaultBitsPerSample		= 8;
 static const NSInteger DefaultSamplesPerPixel	= 4;
 static const NSInteger BitsPerByte				= 8;
@@ -15,6 +16,7 @@ static const NSInteger BitsPerByte				= 8;
 @implementation NSBitmapImageRep (Additions)
 
 +(NSBitmapImageRep *)imageRepWithPixelsWide:(NSInteger)width pixelsHigh:(NSInteger)height hasAlpha:(BOOL)alpha{
+	/*
 	return [[[NSBitmapImageRep alloc] initWithBitmapDataPlanes:NULL 
 													pixelsWide:width 
 													pixelsHigh:height 
@@ -25,6 +27,18 @@ static const NSInteger BitsPerByte				= 8;
 												colorSpaceName:NSCalibratedRGBColorSpace 
 												   bytesPerRow:width * (DefaultBitsPerSample * DefaultSamplesPerPixel) / BitsPerByte
 												  bitsPerPixel:DefaultBitsPerSample * DefaultSamplesPerPixel] autorelease];
+	 */
+	
+	return [[[NSBitmapImageRep alloc] initWithBitmapDataPlanes:NULL 
+													pixelsWide:width 
+													pixelsHigh:height 
+												 bitsPerSample:DefaultBitsPerSample 
+											   samplesPerPixel:DefaultSamplesPerPixel 
+													  hasAlpha:alpha 
+													  isPlanar:NO 
+												colorSpaceName:NSCalibratedRGBColorSpace 
+												   bytesPerRow:0
+												  bitsPerPixel:0] autorelease];
 }
 
 
@@ -72,7 +86,6 @@ static const NSInteger BitsPerByte				= 8;
 												 [[self colorSpace] CGColorSpace], 
 												 kCGImageAlphaPremultipliedLast);
 	
-	//The image will be disproportionately drwan in the specific rectangle.
 	CGContextDrawImage(context, CGRectMake(0, 0, w, h), cgImage);
 	CGContextRelease(context);
 }

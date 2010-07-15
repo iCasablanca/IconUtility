@@ -10,14 +10,13 @@
 #import "ViewManager.h"
 
 /**
- * Private category.
+ * Private.
  */
-@interface ViewManager (NSNotification)
-
+@interface ViewManager (_NSNotification)
 -(void)_subscribe;
 -(void)_unsubscribe;
 -(void)_draggingEnteredHandler:(NSNotification *)aNotification;
 -(void)_draggingExistedHandler:(NSNotification *)aNotification;
 -(void)_draggingConcludedHandler:(NSNotification *)aNotification;
--(void)_hideAndShow;
+//-(void)_hideAndShow;
 @end

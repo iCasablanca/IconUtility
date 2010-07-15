@@ -14,8 +14,6 @@
 @synthesize imageName = _imageName;
 
 -(void)awakeFromNib{
-	//NSLog(@"%s", __FUNCTION__);
-	
 	[self registerForDraggedTypes:[NSArray arrayWithObjects:NSFilenamesPboardType, NSTIFFPboardType, nil]];
 }
 

@@ -9,6 +9,9 @@
 #import <Cocoa/Cocoa.h>
 #import "DraggingView.h"
 
+/**
+ * The category for NSDraggingDestination informal protocol.
+ */
 @interface DraggingView (NSDraggingDestination)
 
 @end

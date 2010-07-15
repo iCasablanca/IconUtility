@@ -8,7 +8,7 @@
 
 #import "DraggingView-NSNotification.h"
 
-@implementation DraggingView (NSNotification)
+@implementation DraggingView (_NSNotification)
 
 -(void)_postNotificationWithNotificationName:(NSString *)aName{
 	NSNotification *aNotification = [NSNotification notificationWithName:aName object:self];

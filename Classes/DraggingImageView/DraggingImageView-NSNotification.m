@@ -9,7 +9,7 @@
 #import "DraggingImageView-NSNotification.h"
 
 
-@implementation DraggingImageView (NSNotification)
+@implementation DraggingImageView (_NSNotification)
 
 -(void)_postNotificationWithNotificationName:(NSString *)aName{
 	NSNotification *aNotification = [NSNotification notificationWithName:aName object:self];

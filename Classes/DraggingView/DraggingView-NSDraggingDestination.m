@@ -13,21 +13,15 @@
 @implementation DraggingView (NSDraggingDestination)
 
 - (NSDragOperation)draggingEntered:(id < NSDraggingInfo >) sender{
-	//NSLog(@"%s", __FUNCTION__);
-	
 	self.highlighted = YES;
 	return NSDragOperationCopy;
 }
 
 - (void)draggingExited:(id < NSDraggingInfo >) sender{
-	//NSLog(@"%s", __FUNCTION__);
-	
 	self.highlighted = NO;
 }
 
 - (BOOL)prepareForDragOperation:(id < NSDraggingInfo >) sender{
-	//NSLog(@"%s", __FUNCTION__);
-	
 	return YES;
 }
 
@@ -46,8 +40,6 @@
 }
 
 - (void)concludeDragOperation:(id < NSDraggingInfo >) sender{
-	NSLog(@"%s", __FUNCTION__);
-	
 	[self _postNotificationWithNotificationName:DraggingConcludedNotification];
 	self.highlighted = NO;
 }

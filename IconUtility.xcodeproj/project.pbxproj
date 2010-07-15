@@ -12,6 +12,8 @@
 		8D11072D0486CEB800E47090 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 29B97316FDCFA39411CA2CEA /* main.m */; settings = {ATTRIBUTES = (); }; };
 		8D11072F0486CEB800E47090 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1058C7A1FEA54F0111CA2CBB /* Cocoa.framework */; };
 		93B74B8511EB3BFD00A49D8A /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 93B74B8311EB3BFD00A49D8A /* AppDelegate.m */; };
+		93CDB65711EF330B00C68E51 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 93CDB65611EF330B00C68E51 /* QuartzCore.framework */; };
+		93E0CEAC11ED8F9F000195C7 /* ViewManager-SaveImages.m in Sources */ = {isa = PBXBuildFile; fileRef = 93E0CEAB11ED8F9F000195C7 /* ViewManager-SaveImages.m */; };
 		93E74DE911EC3C0A00D9F803 /* DraggingNotification.m in Sources */ = {isa = PBXBuildFile; fileRef = 93E74DE811EC3C0A00D9F803 /* DraggingNotification.m */; };
 		93E74DED11EC3C5200D9F803 /* ViewManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 93E74DEC11EC3C5200D9F803 /* ViewManager.m */; };
 		93E74DF011EC3C9500D9F803 /* ViewManager-NSNotification.m in Sources */ = {isa = PBXBuildFile; fileRef = 93E74DEF11EC3C9500D9F803 /* ViewManager-NSNotification.m */; };
@@ -41,6 +43,9 @@
 		8D1107320486CEB800E47090 /* IconUtility.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = IconUtility.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		93B74B8211EB3BFD00A49D8A /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		93B74B8311EB3BFD00A49D8A /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		93CDB65611EF330B00C68E51 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		93E0CEAA11ED8F9F000195C7 /* ViewManager-SaveImages.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "ViewManager-SaveImages.h"; sourceTree = "<group>"; };
+		93E0CEAB11ED8F9F000195C7 /* ViewManager-SaveImages.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "ViewManager-SaveImages.m"; sourceTree = "<group>"; };
 		93E74DE711EC3C0A00D9F803 /* DraggingNotification.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DraggingNotification.h; sourceTree = "<group>"; };
 		93E74DE811EC3C0A00D9F803 /* DraggingNotification.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DraggingNotification.m; sourceTree = "<group>"; };
 		93E74DEB11EC3C5200D9F803 /* ViewManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewManager.h; sourceTree = "<group>"; };
@@ -76,6 +81,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				8D11072F0486CEB800E47090 /* Cocoa.framework in Frameworks */,
+				93CDB65711EF330B00C68E51 /* QuartzCore.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -96,6 +102,7 @@
 				29B97324FDCFA39411CA2CEA /* AppKit.framework */,
 				13E42FB307B3F0F600E4EEF1 /* CoreData.framework */,
 				29B97325FDCFA39411CA2CEA /* Foundation.framework */,
+				93CDB65611EF330B00C68E51 /* QuartzCore.framework */,
 			);
 			name = "Other Frameworks";
 			sourceTree = "<group>";
@@ -197,6 +204,8 @@
 				93E74DEC11EC3C5200D9F803 /* ViewManager.m */,
 				93E74DEE11EC3C9500D9F803 /* ViewManager-NSNotification.h */,
 				93E74DEF11EC3C9500D9F803 /* ViewManager-NSNotification.m */,
+				93E0CEAA11ED8F9F000195C7 /* ViewManager-SaveImages.h */,
+				93E0CEAB11ED8F9F000195C7 /* ViewManager-SaveImages.m */,
 			);
 			path = ViewManager;
 			sourceTree = "<group>";
@@ -327,6 +336,7 @@
 				93E74E4111EC4A6E00D9F803 /* DraggingImageView-NSNotification.m in Sources */,
 				93E74EF311EC587600D9F803 /* DraggingView-NSNotification.m in Sources */,
 				93E750F511EC9C5600D9F803 /* NSBitmapImageRep-Additions.m in Sources */,
+				93E0CEAC11ED8F9F000195C7 /* ViewManager-SaveImages.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

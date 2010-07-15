@@ -15,11 +15,17 @@
     NSWindow *window;
 	IBOutlet DraggingView *_draggingView;
 	ViewManager *_viewManager;
+	
+	//New
+	IBOutlet NSTextField *_messageLabel;
 }
 
 @property (assign) IBOutlet NSWindow *window;
 @property (nonatomic, assign) DraggingView *draggingView;
 @property (nonatomic, retain) ViewManager *viewManager;
+
+//New
+@property (nonatomic, assign) NSTextField *messageLabel;
 
 -(IBAction)buttonPressed:(id)sender;
 @end
