@@ -10,8 +10,6 @@
 #import "DraggingNotification.h"
 #import "DraggingViewProtocol.h"
 
-#import <QuartzCore/CoreAnimation.h>
-
 @implementation ViewManager (_NSNotification)
 
 -(void)_subscribe{
@@ -65,27 +63,6 @@
 	}
 	
 	[self.parentView concluded];
-	
-	//[self _hideAndShow];
 }
-
-/*
--(void)_hideAndShow{
-	static const NSInteger HideTag = 301;//Labels
-	static const NSInteger ShowTag = 401;//Labels
-	
-	for (NSView *aView in [(NSView *)self.parentView subviews]){
-		if ([aView tag] == HideTag){
-			[[aView animator] setAlphaValue:0.0];
-		}
-		
-		if ([aView tag] == ShowTag){
-			[aView setHidden:NO];
-			[aView setAlphaValue:0.0];
-			[[aView animator] setAlphaValue:1.0];
-		}
-	}
-}
- */
 
 @end

@@ -9,27 +9,30 @@
 #import "AppDelegate.h"
 #import "ViewManager.h"
 #import "DraggingView.h"
-
-//New
 #import <QuartzCore/CoreAnimation.h>
 
 //Private
+static NSString * const ImagesDidSaveString = @"Images saved to the desktop.";
+static NSString * const CautionString		= @"Drag images on the window.";
+
+//Private
 @interface AppDelegate ()
+-(void)_setupAnimations;
 -(void)_showLabelWithTitle:(NSString *)title textColor:(NSColor *)color;
 -(void)_hideLabelAfterDelay:(NSTimeInterval)delay;
 -(void)_hideLabel;
+-(CABasicAnimation *)_fadeoutAnimation;
 @end
 
 @implementation AppDelegate
 @synthesize window;
 @synthesize viewManager = _viewManager;
 @synthesize draggingView = _draggingView;
-
-//New
 @synthesize messageLabel = _messageLabel;
 
 - (void)applicationDidFinishLaunching:(NSNotification *)aNotification {
 	_viewManager = [[ViewManager alloc] initWithParentView:self.draggingView];
+	[self _setupAnimations];
 }
 
 - (BOOL)applicationShouldTerminateAfterLastWindowClosed:(NSApplication *) theApplication{
@@ -40,11 +43,11 @@
 	NSLog(@"%s", __FUNCTION__);
 	
 	if ([self.viewManager saveImages]){
-		[self _showLabelWithTitle:@"Images saved to the desktop." textColor:[NSColor blueColor]];
+		[self _showLabelWithTitle:ImagesDidSaveString textColor:[NSColor blueColor]];
 		return;
 	}
 	
-	[self _showLabelWithTitle:@"Drag images on the window." textColor:[NSColor redColor]];
+	[self _showLabelWithTitle:CautionString textColor:[NSColor redColor]];
 }
 
 -(void)dealloc{
@@ -56,6 +59,11 @@
 
 #pragma mark -
 #pragma mark Private 
+
+-(void)_setupAnimations{
+	NSDictionary *animationDict = [NSDictionary dictionaryWithObjectsAndKeys:[self _fadeoutAnimation], @"alphaValue", nil];
+	[self.messageLabel setAnimations:animationDict];
+}
 
 -(void)_showLabelWithTitle:(NSString *)title textColor:(NSColor *)color{
 	if (color == nil){
@@ -79,5 +87,13 @@
 -(void)_hideLabel{
 	[[self.messageLabel animator] setAlphaValue:0.0];
 }
+
+-(CABasicAnimation *)_fadeoutAnimation{
+	CABasicAnimation *animation = [CABasicAnimation animation];
+	animation.duration = 0.5;
+	animation.timingFunction = [CAMediaTimingFunction functionWithName:kCAMediaTimingFunctionEaseOut];
+	return animation;
+}
+
 
 @end
