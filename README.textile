@@ -9,6 +9,11 @@ The app resizes images into the following iPhone/iPad related icon size;
 * Icon-Small@2x.png - 58x58 pixels iPhone settings icon in high resolution.
 * Icon-Small-50.png - 50x50 iPad settings icon.
 
+h2. Related articles
+
+* "IconUtility - iPhone/iPad用のアイコンイメージ作成アプリケーション":http://blog.boreal-kiss.com/2010/07/14000005.html
+* "IconUtility - Mac app to resize images for iPhone/iPad icons":http://blog.boreal-kiss.net/2010/07/iconutility/
+
 h2. Contact
 
 * "http://blog.boreal-kiss.net/":http://blog.boreal-kiss.net/
