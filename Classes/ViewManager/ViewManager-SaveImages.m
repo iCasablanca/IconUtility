@@ -23,13 +23,16 @@ static NSString * const DefaultDirectoryName = @"com.borealkiss.IconUtility";
 @implementation ViewManager (SaveImages)
 
 -(BOOL)saveImages{
-	NSString *path2Directory = [self _pathToDirectory];
-	
 	for (DraggingImageView *aView in self.childViews){
 		if ([aView targetImage] == nil) {
 			return NO;
 		}
-		
+	}
+	
+	//Creates a directory for all images.
+	NSString *path2Directory = [self _pathToDirectory];
+	
+	for (DraggingImageView *aView in self.childViews){		
 		NSBitmapImageRep *imageRep = [NSBitmapImageRep imageRepWithPixelsWide:aView.imageWidth pixelsHigh:aView.imageHeight hasAlpha:YES];
 		[imageRep setImage:aView.image];
 		NSData *imageData = [imageRep representationUsingType:NSPNGFileType properties:nil];
