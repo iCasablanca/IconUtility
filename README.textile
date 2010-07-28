@@ -11,7 +11,7 @@ The app resizes images into the following iPhone/iPad related icon size;
 
 h2. Related articles
 
-* "IconUtility - iPhone/iPad用のアイコンイメージ作成アプリケーション":http://blog.boreal-kiss.com/2010/07/14000005.html
+* "IconUtility - JP description":http://blog.boreal-kiss.com/2010/07/14000005.html
 * "IconUtility - Mac app to resize images for iPhone/iPad icons":http://blog.boreal-kiss.net/2010/07/iconutility/
 
 h2. Contact
