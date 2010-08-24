@@ -13,6 +13,5 @@
  * Save functionalities.
  */
 @interface ViewManager (SaveImages)
-//-(void)saveImages;
 -(BOOL)saveImages;
 @end

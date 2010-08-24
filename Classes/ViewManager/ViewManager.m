@@ -38,11 +38,17 @@ static NSString * const IconsTagKey				= @"Tag";
 
 -(void)dealloc{
 	[self _unsubscribe];
-	
 	self.icons = nil;
 	self.parentView = nil;
 	self.childViews = nil;
 	[super dealloc];
+}
+
+//New
+-(void)redraw:(id)sender{
+	for (id <DraggingViewProtocol> childView in self.childViews){
+		[childView setTargetImage:childView.targetImage];
+	}
 }
 
 #pragma mark -

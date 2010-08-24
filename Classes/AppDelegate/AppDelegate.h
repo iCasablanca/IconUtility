@@ -8,24 +8,11 @@
 
 #import <Cocoa/Cocoa.h>
 
-@class DraggingView;
-@class ViewManager;
-
 @interface AppDelegate : NSObject <NSApplicationDelegate> {
-    NSWindow *window;
-	IBOutlet DraggingView *_draggingView;
-	ViewManager *_viewManager;
-	
-	//New
-	IBOutlet NSTextField *_messageLabel;
+    NSWindow *_window;
+	NSWindowController *_windowController;
 }
-
 @property (assign) IBOutlet NSWindow *window;
-@property (nonatomic, assign) DraggingView *draggingView;
-@property (nonatomic, retain) ViewManager *viewManager;
+@property (nonatomic, retain) NSWindowController *windowController;
 
-//New
-@property (nonatomic, assign) NSTextField *messageLabel;
-
--(IBAction)buttonPressed:(id)sender;
 @end

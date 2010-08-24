@@ -26,7 +26,7 @@
 }
 
 - (BOOL)performDragOperation:(id < NSDraggingInfo >) sender{
-	NSLog(@"%s", __FUNCTION__);
+	//NSLog(@"%s", __FUNCTION__);
 	
 	NSPasteboard *pb = [sender draggingPasteboard];
 	

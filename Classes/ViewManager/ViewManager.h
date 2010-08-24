@@ -20,6 +20,9 @@
 @property (nonatomic, retain) NSArray *childViews;
 
 -(id)initWithParentView:(id <DraggingViewProtocol>)aView;
+
+//New
+-(void)redraw:(id)sender;
 @end
 
 #import "ViewManager-SaveImages.h"

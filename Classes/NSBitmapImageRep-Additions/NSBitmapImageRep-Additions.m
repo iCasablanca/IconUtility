@@ -15,20 +15,7 @@ static const NSInteger BitsPerByte				= 8;
 
 @implementation NSBitmapImageRep (Additions)
 
-+(NSBitmapImageRep *)imageRepWithPixelsWide:(NSInteger)width pixelsHigh:(NSInteger)height hasAlpha:(BOOL)alpha{
-	/*
-	return [[[NSBitmapImageRep alloc] initWithBitmapDataPlanes:NULL 
-													pixelsWide:width 
-													pixelsHigh:height 
-												 bitsPerSample:DefaultBitsPerSample 
-											   samplesPerPixel:DefaultSamplesPerPixel 
-													  hasAlpha:alpha 
-													  isPlanar:NO 
-												colorSpaceName:NSCalibratedRGBColorSpace 
-												   bytesPerRow:width * (DefaultBitsPerSample * DefaultSamplesPerPixel) / BitsPerByte
-												  bitsPerPixel:DefaultBitsPerSample * DefaultSamplesPerPixel] autorelease];
-	 */
-	
++(NSBitmapImageRep *)imageRepWithPixelsWide:(NSInteger)width pixelsHigh:(NSInteger)height hasAlpha:(BOOL)alpha{	
 	return [[[NSBitmapImageRep alloc] initWithBitmapDataPlanes:NULL 
 													pixelsWide:width 
 													pixelsHigh:height 
@@ -70,7 +57,7 @@ static const NSInteger BitsPerByte				= 8;
 }
 
 
--(void)setImage:(NSImage *)anImage{
+-(void)setImage:(NSImage *)anImage interpolationQuality:(CGInterpolationQuality)quality{
 	int w = [self pixelsWide];
 	int h = [self pixelsHigh];
 	int bpr = [self bytesPerRow];
@@ -86,8 +73,15 @@ static const NSInteger BitsPerByte				= 8;
 												 [[self colorSpace] CGColorSpace], 
 												 kCGImageAlphaPremultipliedLast);
 	
+	CGContextSetInterpolationQuality(context, quality);
+	
 	CGContextDrawImage(context, CGRectMake(0, 0, w, h), cgImage);
 	CGContextRelease(context);
+}
+
+
+-(void)setImage:(NSImage *)anImage{
+	[self setImage:anImage interpolationQuality:kCGInterpolationDefault];
 }
 
 @end

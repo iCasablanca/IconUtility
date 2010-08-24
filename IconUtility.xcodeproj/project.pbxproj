@@ -11,6 +11,10 @@
 		8D11072B0486CEB800E47090 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 089C165CFE840E0CC02AAC07 /* InfoPlist.strings */; };
 		8D11072D0486CEB800E47090 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 29B97316FDCFA39411CA2CEA /* main.m */; settings = {ATTRIBUTES = (); }; };
 		8D11072F0486CEB800E47090 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1058C7A1FEA54F0111CA2CBB /* Cocoa.framework */; };
+		9355A6A31200001A002C41A0 /* Credits.html in Resources */ = {isa = PBXBuildFile; fileRef = 9355A6A21200001A002C41A0 /* Credits.html */; };
+		938DAD961223C72500067FBB /* QualityManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 938DAD951223C72500067FBB /* QualityManager.m */; };
+		939ADB6D1223A72E00615465 /* MainWC.m in Sources */ = {isa = PBXBuildFile; fileRef = 939ADB6C1223A72E00615465 /* MainWC.m */; };
+		939ADB701223A74900615465 /* MainWC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 939ADB6F1223A74900615465 /* MainWC.xib */; };
 		93B74B8511EB3BFD00A49D8A /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 93B74B8311EB3BFD00A49D8A /* AppDelegate.m */; };
 		93CDB65711EF330B00C68E51 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 93CDB65611EF330B00C68E51 /* QuartzCore.framework */; };
 		93E0CEAC11ED8F9F000195C7 /* ViewManager-SaveImages.m in Sources */ = {isa = PBXBuildFile; fileRef = 93E0CEAB11ED8F9F000195C7 /* ViewManager-SaveImages.m */; };
@@ -41,6 +45,12 @@
 		29B97325FDCFA39411CA2CEA /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = /System/Library/Frameworks/Foundation.framework; sourceTree = "<absolute>"; };
 		8D1107310486CEB800E47090 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		8D1107320486CEB800E47090 /* IconUtility.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = IconUtility.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		9355A6A21200001A002C41A0 /* Credits.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = Credits.html; sourceTree = "<group>"; };
+		938DAD941223C72500067FBB /* QualityManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QualityManager.h; sourceTree = "<group>"; };
+		938DAD951223C72500067FBB /* QualityManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QualityManager.m; sourceTree = "<group>"; };
+		939ADB6B1223A72E00615465 /* MainWC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainWC.h; sourceTree = "<group>"; };
+		939ADB6C1223A72E00615465 /* MainWC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainWC.m; sourceTree = "<group>"; };
+		939ADB6F1223A74900615465 /* MainWC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MainWC.xib; sourceTree = "<group>"; };
 		93B74B8211EB3BFD00A49D8A /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		93B74B8311EB3BFD00A49D8A /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		93CDB65611EF330B00C68E51 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
@@ -139,6 +149,7 @@
 		29B97317FDCFA39411CA2CEA /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				9355A6A21200001A002C41A0 /* Credits.html */,
 				93E751F211ECB31900D9F803 /* IconUtility.icns */,
 				8D1107310486CEB800E47090 /* Info.plist */,
 				089C165CFE840E0CC02AAC07 /* InfoPlist.strings */,
@@ -156,9 +167,38 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		938DAD931223C72500067FBB /* QualityManager */ = {
+			isa = PBXGroup;
+			children = (
+				938DAD941223C72500067FBB /* QualityManager.h */,
+				938DAD951223C72500067FBB /* QualityManager.m */,
+			);
+			path = QualityManager;
+			sourceTree = "<group>";
+		};
+		939ADB6A1223A71B00615465 /* MainWC */ = {
+			isa = PBXGroup;
+			children = (
+				939ADB6E1223A73E00615465 /* Resources */,
+				939ADB6B1223A72E00615465 /* MainWC.h */,
+				939ADB6C1223A72E00615465 /* MainWC.m */,
+			);
+			path = MainWC;
+			sourceTree = "<group>";
+		};
+		939ADB6E1223A73E00615465 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				939ADB6F1223A74900615465 /* MainWC.xib */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
 		93B74B8011EB3BFD00A49D8A /* Classes */ = {
 			isa = PBXGroup;
 			children = (
+				938DAD931223C72500067FBB /* QualityManager */,
+				939ADB6A1223A71B00615465 /* MainWC */,
 				93E750F211EC9C4300D9F803 /* NSBitmapImageRep-Additions */,
 				93E74E3311EC485300D9F803 /* DraggingImageView */,
 				93E74E0A11EC42B200D9F803 /* DraggingView */,
@@ -312,6 +352,8 @@
 				1DDD58160DA1D0A300B32029 /* MainMenu.xib in Resources */,
 				93E74F5D11EC63B100D9F803 /* Icons.plist in Resources */,
 				93E751F311ECB31900D9F803 /* IconUtility.icns in Resources */,
+				9355A6A31200001A002C41A0 /* Credits.html in Resources */,
+				939ADB701223A74900615465 /* MainWC.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -337,6 +379,8 @@
 				93E74EF311EC587600D9F803 /* DraggingView-NSNotification.m in Sources */,
 				93E750F511EC9C5600D9F803 /* NSBitmapImageRep-Additions.m in Sources */,
 				93E0CEAC11ED8F9F000195C7 /* ViewManager-SaveImages.m in Sources */,
+				939ADB6D1223A72E00615465 /* MainWC.m in Sources */,
+				938DAD961223C72500067FBB /* QualityManager.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

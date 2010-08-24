@@ -26,5 +26,7 @@
 /**
  * The image will be disproportionately drwan in the bitmap plane.
  */
+-(void)setImage:(NSImage *)anImage interpolationQuality:(CGInterpolationQuality)quality;
+
 -(void)setImage:(NSImage *)anImage;
 @end

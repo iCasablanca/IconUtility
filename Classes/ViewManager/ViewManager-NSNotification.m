@@ -34,8 +34,6 @@
 }
 
 -(void)_draggingEnteredHandler:(NSNotification *)aNotification{
-	//NSLog(@"%s", __FUNCTION__);
-	
 	if ([aNotification object] == self.parentView){
 		return;
 	}
@@ -44,8 +42,6 @@
 }
 
 -(void)_draggingExistedHandler:(NSNotification *)aNotification{
-	//NSLog(@"%s", __FUNCTION__);
-	
 	if ([aNotification object] == self.parentView){
 		return;
 	}
@@ -54,8 +50,6 @@
 }
 
 -(void)_draggingConcludedHandler:(NSNotification *)aNotification{
-	//NSLog(@"%s", __FUNCTION__);
-	
 	id <DraggingViewProtocol> obj = [aNotification object];
 	
 	for (id <DraggingViewProtocol> childView in self.childViews){

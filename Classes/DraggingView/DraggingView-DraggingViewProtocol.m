@@ -16,19 +16,19 @@
 }
 
 -(void)entered{
-	NSLog(@"%s", __FUNCTION__);
+	//NSLog(@"%s", __FUNCTION__);
 	
 	self.highlighted = YES;
 } 
 
 -(void)existed{
-	NSLog(@"%s", __FUNCTION__);
+	//NSLog(@"%s", __FUNCTION__);
 	
 	self.highlighted = NO;
 }
 
 -(void)concluded{
-	NSLog(@"%s", __FUNCTION__);
+	//NSLog(@"%s", __FUNCTION__);
 	
 	self.highlighted = NO;
 }

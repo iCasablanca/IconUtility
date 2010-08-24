@@ -78,17 +78,4 @@ static NSString * const DefaultDirectoryName = @"com.borealkiss.IconUtility";
 	return [NSString stringWithFormat:@"%@%03d", Untitle, index];;
 }
 
-/*
--(NSString *)_filePathWithFileName:(NSString *)fileName{
-	NSString *pathToDesktop = [NSSearchPathForDirectoriesInDomains(NSDesktopDirectory, NSUserDomainMask, YES) lastObject];
-	NSString *destination = [pathToDesktop stringByAppendingPathComponent:DefaultDirectoryName];
-	
-	if ([[NSFileManager defaultManager] fileExistsAtPath:destination] == NO){
-		[[NSFileManager defaultManager] createDirectoryAtPath:destination withIntermediateDirectories:NO attributes:nil error:nil];
-	}
-	
-	return [destination stringByAppendingPathComponent:fileName];
-}
- */
-
 @end

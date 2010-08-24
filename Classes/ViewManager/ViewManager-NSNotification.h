@@ -18,5 +18,4 @@
 -(void)_draggingEnteredHandler:(NSNotification *)aNotification;
 -(void)_draggingExistedHandler:(NSNotification *)aNotification;
 -(void)_draggingConcludedHandler:(NSNotification *)aNotification;
-//-(void)_hideAndShow;
 @end
