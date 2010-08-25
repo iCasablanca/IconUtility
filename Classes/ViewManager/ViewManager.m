@@ -8,7 +8,7 @@
 
 #import "ViewManager.h"
 #import "ViewManager-NSNotification.h"
-#import "DraggingImageView.h"
+#import "IconImageView.h"
 
 //Private
 static NSString * const IconsFileName			= @"Icons";
@@ -24,31 +24,30 @@ static NSString * const IconsTagKey				= @"Tag";
 @end
 
 @implementation ViewManager
-@synthesize parentView = _parentView;
+@synthesize contentView = _contentView;
 @synthesize childViews = _childViews;
 @synthesize icons = _icons;
 
--(id)initWithParentView:(id <DraggingViewProtocol>)aView{
+-(id)initWithContentView:(NSView *)aView{
 	if (self = [super init]){
-		self.parentView = aView;
+		self.contentView = aView;
 		[self _setup];
 	}
 	return self;
 }
 
+-(void)redraw:(id)sender{
+	for (IconImageView *childView in self.childViews){
+		[childView setTargetImage:[childView targetImage]];
+	}
+}
+
 -(void)dealloc{
 	[self _unsubscribe];
 	self.icons = nil;
-	self.parentView = nil;
+	self.contentView = nil;
 	self.childViews = nil;
 	[super dealloc];
-}
-
-//New
--(void)redraw:(id)sender{
-	for (id <DraggingViewProtocol> childView in self.childViews){
-		[childView setTargetImage:childView.targetImage];
-	}
 }
 
 #pragma mark -
@@ -71,7 +70,7 @@ static NSString * const IconsTagKey				= @"Tag";
 		NSInteger tag = [(NSNumber *)[dict objectForKey:IconsTagKey] integerValue];
 		CGFloat size = [(NSNumber *)[dict objectForKey:IconsSizeKey] floatValue];
 
-		DraggingImageView *aView = [(NSView *)self.parentView viewWithTag:tag];
+		IconImageView *aView = [(NSView *)self.contentView viewWithTag:tag];
 		
 		if (aView){
 			aView.imageName = name;

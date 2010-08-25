@@ -10,15 +10,16 @@
 
 //Private
 @interface DraggingView ()
--(void)_initIvars;
+-(void)_setup;
 @end
 
 @implementation DraggingView
+@synthesize targetImage = _targetImage;
 @synthesize highlighted = _highlighted;
 
 -(void)awakeFromNib{
-	[self _initIvars];
 	[self registerForDraggedTypes:[NSArray arrayWithObjects:NSFilenamesPboardType, NSTIFFPboardType, nil]];
+	[self _setup];
 }
 
 -(void)drawRect:(NSRect)dirtyRect{
@@ -29,7 +30,7 @@
 }
 
 -(void)dealloc{
-	[_targetImage release];
+	self.targetImage = nil;
 	[super dealloc];
 }
 
@@ -44,7 +45,7 @@
 #pragma mark -
 #pragma mark Private 
 
--(void)_initIvars{
+-(void)_setup{
 	self.highlighted = NO;
 }
 

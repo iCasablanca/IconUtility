@@ -8,21 +8,12 @@
 
 #import "ViewManager-NSNotification.h"
 #import "DraggingNotification.h"
-#import "DraggingViewProtocol.h"
+#import "DraggingView.h"
+#import "IconImageView.h"
 
 @implementation ViewManager (_NSNotification)
 
--(void)_subscribe{
-	[[NSNotificationCenter defaultCenter] addObserver:self 
-											 selector:@selector(_draggingEnteredHandler:) 
-												 name:DraggingEnteredNotification 
-											   object:nil];
-	
-	[[NSNotificationCenter defaultCenter] addObserver:self 
-											 selector:@selector(_draggingExistedHandler:) 
-												 name:DraggingExistedNotification 
-											   object:nil];
-	
+-(void)_subscribe{	
 	[[NSNotificationCenter defaultCenter] addObserver:self 
 											 selector:@selector(_draggingConcludedHandler:) 
 												 name:DraggingConcludedNotification 
@@ -33,30 +24,12 @@
 	[[NSNotificationCenter defaultCenter] removeObserver:self];
 }
 
--(void)_draggingEnteredHandler:(NSNotification *)aNotification{
-	if ([aNotification object] == self.parentView){
-		return;
-	}
-	
-	[self.parentView entered];
-}
-
--(void)_draggingExistedHandler:(NSNotification *)aNotification{
-	if ([aNotification object] == self.parentView){
-		return;
-	}
-	
-	[self.parentView existed];
-}
-
 -(void)_draggingConcludedHandler:(NSNotification *)aNotification{
-	id <DraggingViewProtocol> obj = [aNotification object];
+	DraggingView *aView = (DraggingView *)[aNotification object];
 	
-	for (id <DraggingViewProtocol> childView in self.childViews){
-		[childView setTargetImage:[obj targetImage]];
+	for (IconImageView *childView in self.childViews){
+		[childView setTargetImage:[aView targetImage]];
 	}
-	
-	[self.parentView concluded];
 }
 
 @end

@@ -24,9 +24,14 @@
 -(NSImage *)image;
 
 /**
- * The image will be disproportionately drwan in the bitmap plane.
+ * The image will be disproportionately drwan in the bitmap plane of the receiver,
+ * using CoreGraphics' interporation quality algorithm.
  */
 -(void)setImage:(NSImage *)anImage interpolationQuality:(CGInterpolationQuality)quality;
 
+/**
+ * The image will be disproportionately drwan in the bitmap plane of the receiver,
+ * using CoreGraphics' default interporation quality algorithm.
+ */
 -(void)setImage:(NSImage *)anImage;
 @end

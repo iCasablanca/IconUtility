@@ -7,21 +7,20 @@
 //
 
 #import <Cocoa/Cocoa.h>
-#import "DraggingViewProtocol.h"
 
+/**
+ * Manages icon image views and the saving function.
+ */
 @interface ViewManager : NSObject {
-	id <DraggingViewProtocol> _parentView;
-	
+	NSView *_contentView;
 	NSArray *_icons;
 	NSArray *_childViews;
 }
-@property (nonatomic, assign) id <DraggingViewProtocol> parentView;
+@property (nonatomic, retain) NSView *contentView;
 @property (nonatomic, retain) NSArray *icons;
 @property (nonatomic, retain) NSArray *childViews;
 
--(id)initWithParentView:(id <DraggingViewProtocol>)aView;
-
-//New
+-(id)initWithContentView:(NSView *)aView;
 -(void)redraw:(id)sender;
 @end
 

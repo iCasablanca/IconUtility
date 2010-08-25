@@ -15,7 +15,5 @@
 @interface ViewManager (_NSNotification)
 -(void)_subscribe;
 -(void)_unsubscribe;
--(void)_draggingEnteredHandler:(NSNotification *)aNotification;
--(void)_draggingExistedHandler:(NSNotification *)aNotification;
 -(void)_draggingConcludedHandler:(NSNotification *)aNotification;
 @end

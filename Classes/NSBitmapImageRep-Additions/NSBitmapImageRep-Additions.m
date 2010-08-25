@@ -73,6 +73,7 @@ static const NSInteger BitsPerByte				= 8;
 												 [[self colorSpace] CGColorSpace], 
 												 kCGImageAlphaPremultipliedLast);
 	
+	//Considers CG's interpolation algorithms.
 	CGContextSetInterpolationQuality(context, quality);
 	
 	CGContextDrawImage(context, CGRectMake(0, 0, w, h), cgImage);

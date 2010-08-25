@@ -12,6 +12,9 @@ extern NSString * const DraggingEnteredNotification;
 extern NSString * const DraggingExistedNotification;
 extern NSString * const DraggingConcludedNotification;
 
+/**
+ * Notification naming purposes.
+ */
 @interface DraggingNotification : NSNotification {
 
 }

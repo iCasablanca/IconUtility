@@ -7,9 +7,8 @@
 //
 
 #import "ViewManager-SaveImages.h"
-#import "DraggingViewProtocol.h"
-#import "DraggingImageView.h"
 #import "NSBitmapImageRep-Additions.h"
+#import "IconImageView.h"
 
 //Private
 static NSString * const DefaultDirectoryName = @"com.borealkiss.IconUtility";
@@ -22,8 +21,8 @@ static NSString * const DefaultDirectoryName = @"com.borealkiss.IconUtility";
 
 @implementation ViewManager (SaveImages)
 
--(BOOL)saveImages{
-	for (DraggingImageView *aView in self.childViews){
+-(BOOL)saveImages:(id)sender{
+	for (IconImageView *aView in self.childViews){
 		if ([aView targetImage] == nil) {
 			return NO;
 		}
@@ -32,7 +31,7 @@ static NSString * const DefaultDirectoryName = @"com.borealkiss.IconUtility";
 	//Creates a directory for all images.
 	NSString *path2Directory = [self _pathToDirectory];
 	
-	for (DraggingImageView *aView in self.childViews){		
+	for (IconImageView *aView in self.childViews){		
 		NSBitmapImageRep *imageRep = [NSBitmapImageRep imageRepWithPixelsWide:aView.imageWidth pixelsHigh:aView.imageHeight hasAlpha:YES];
 		[imageRep setImage:aView.image];
 		NSData *imageData = [imageRep representationUsingType:NSPNGFileType properties:nil];

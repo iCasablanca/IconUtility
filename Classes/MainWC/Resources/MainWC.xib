@@ -12,7 +12,7 @@
 		</object>
 		<object class="NSMutableArray" key="IBDocument.EditedObjectIDs">
 			<bool key="EncodedWithXMLCoder">YES</bool>
-			<integer value="4"/>
+			<integer value="8"/>
 		</object>
 		<object class="NSArray" key="IBDocument.PluginDependencies">
 			<bool key="EncodedWithXMLCoder">YES</bool>
@@ -235,12 +235,12 @@
 							<bool key="NSEnabled">YES</bool>
 							<object class="NSTextFieldCell" key="NSCell" id="1052646469">
 								<int key="NSCellFlags">68288064</int>
-								<int key="NSCellFlags2">138413056</int>
+								<int key="NSCellFlags2">138544128</int>
 								<string key="NSContents">Icon.png</string>
-								<object class="NSFont" key="NSSupport" id="980163275">
+								<object class="NSFont" key="NSSupport" id="26">
 									<string key="NSName">LucidaGrande</string>
-									<double key="NSSize">13</double>
-									<int key="NSfFlags">1044</int>
+									<double key="NSSize">11</double>
+									<int key="NSfFlags">3100</int>
 								</object>
 								<reference key="NSControlView" ref="3572032"/>
 								<object class="NSColor" key="NSBackgroundColor" id="661579039">
@@ -272,9 +272,9 @@
 							<bool key="NSEnabled">YES</bool>
 							<object class="NSTextFieldCell" key="NSCell" id="127821496">
 								<int key="NSCellFlags">68288064</int>
-								<int key="NSCellFlags2">138413056</int>
+								<int key="NSCellFlags2">138544128</int>
 								<string key="NSContents">Icon-Small.png</string>
-								<reference key="NSSupport" ref="980163275"/>
+								<reference key="NSSupport" ref="26"/>
 								<reference key="NSControlView" ref="824164394"/>
 								<reference key="NSBackgroundColor" ref="661579039"/>
 								<reference key="NSTextColor" ref="1053420799"/>
@@ -289,9 +289,9 @@
 							<bool key="NSEnabled">YES</bool>
 							<object class="NSTextFieldCell" key="NSCell" id="1058297722">
 								<int key="NSCellFlags">68288064</int>
-								<int key="NSCellFlags2">138413056</int>
+								<int key="NSCellFlags2">138544128</int>
 								<string key="NSContents">Icon-Small@2x.png</string>
-								<reference key="NSSupport" ref="980163275"/>
+								<reference key="NSSupport" ref="26"/>
 								<reference key="NSControlView" ref="373130901"/>
 								<reference key="NSBackgroundColor" ref="661579039"/>
 								<reference key="NSTextColor" ref="1053420799"/>
@@ -306,9 +306,9 @@
 							<bool key="NSEnabled">YES</bool>
 							<object class="NSTextFieldCell" key="NSCell" id="53736469">
 								<int key="NSCellFlags">68288064</int>
-								<int key="NSCellFlags2">138413056</int>
+								<int key="NSCellFlags2">138544128</int>
 								<string key="NSContents">Icon@2x.png</string>
-								<reference key="NSSupport" ref="980163275"/>
+								<reference key="NSSupport" ref="26"/>
 								<reference key="NSControlView" ref="259680897"/>
 								<reference key="NSBackgroundColor" ref="661579039"/>
 								<reference key="NSTextColor" ref="1053420799"/>
@@ -323,9 +323,9 @@
 							<bool key="NSEnabled">YES</bool>
 							<object class="NSTextFieldCell" key="NSCell" id="242851906">
 								<int key="NSCellFlags">68288064</int>
-								<int key="NSCellFlags2">138413056</int>
+								<int key="NSCellFlags2">138544128</int>
 								<string key="NSContents">Icon-72.png</string>
-								<reference key="NSSupport" ref="980163275"/>
+								<reference key="NSSupport" ref="26"/>
 								<reference key="NSControlView" ref="868623835"/>
 								<reference key="NSBackgroundColor" ref="661579039"/>
 								<reference key="NSTextColor" ref="1053420799"/>
@@ -340,9 +340,9 @@
 							<bool key="NSEnabled">YES</bool>
 							<object class="NSTextFieldCell" key="NSCell" id="229945825">
 								<int key="NSCellFlags">68288064</int>
-								<int key="NSCellFlags2">138413056</int>
+								<int key="NSCellFlags2">138544128</int>
 								<string key="NSContents">Icon-Small-50.png</string>
-								<reference key="NSSupport" ref="980163275"/>
+								<reference key="NSSupport" ref="26"/>
 								<reference key="NSControlView" ref="12909079"/>
 								<reference key="NSBackgroundColor" ref="661579039"/>
 								<reference key="NSTextColor" ref="1053420799"/>
@@ -358,7 +358,11 @@
 								<int key="NSCellFlags">-2080244224</int>
 								<int key="NSCellFlags2">134217728</int>
 								<string key="NSContents">Save images</string>
-								<reference key="NSSupport" ref="980163275"/>
+								<object class="NSFont" key="NSSupport" id="980163275">
+									<string key="NSName">LucidaGrande</string>
+									<double key="NSSize">13</double>
+									<int key="NSfFlags">1044</int>
+								</object>
 								<reference key="NSControlView" ref="74831825"/>
 								<int key="NSButtonFlags">-2038152961</int>
 								<int key="NSButtonFlags2">163</int>
@@ -371,7 +375,7 @@
 						<object class="NSTextField" id="167939923">
 							<reference key="NSNextResponder" ref="492987275"/>
 							<int key="NSvFlags">-2147483380</int>
-							<string key="NSFrame">{{131, 350}, {218, 17}}</string>
+							<string key="NSFrame">{{131, 352}, {218, 17}}</string>
 							<reference key="NSSuperview" ref="492987275"/>
 							<bool key="NSEnabled">YES</bool>
 							<object class="NSTextFieldCell" key="NSCell" id="303578458">
@@ -387,7 +391,7 @@
 						<object class="NSPopUpButton" id="939006123">
 							<reference key="NSNextResponder" ref="492987275"/>
 							<int key="NSvFlags">268</int>
-							<string key="NSFrame">{{174, 19}, {130, 26}}</string>
+							<string key="NSFrame">{{175, 17}, {130, 26}}</string>
 							<reference key="NSSuperview" ref="492987275"/>
 							<bool key="NSEnabled">YES</bool>
 							<object class="NSPopUpButtonCell" key="NSCell" id="959596224">
@@ -456,6 +460,13 @@
 								<int key="NSArrowPosition">2</int>
 							</object>
 						</object>
+						<object class="NSCustomView" id="251292360">
+							<reference key="NSNextResponder" ref="492987275"/>
+							<int key="NSvFlags">268</int>
+							<string key="NSFrameSize">{480, 380}</string>
+							<reference key="NSSuperview" ref="492987275"/>
+							<string key="NSClassName">DraggingView</string>
+						</object>
 					</object>
 					<string key="NSFrameSize">{480, 380}</string>
 					<reference key="NSSuperview"/>
@@ -484,22 +495,6 @@
 					<int key="connectionID">37</int>
 				</object>
 				<object class="IBConnectionRecord">
-					<object class="IBActionConnection" key="connection">
-						<string key="label">buttonPressed:</string>
-						<reference key="source" ref="1001"/>
-						<reference key="destination" ref="74831825"/>
-					</object>
-					<int key="connectionID">38</int>
-				</object>
-				<object class="IBConnectionRecord">
-					<object class="IBOutletConnection" key="connection">
-						<string key="label">_draggingView</string>
-						<reference key="source" ref="1001"/>
-						<reference key="destination" ref="492987275"/>
-					</object>
-					<int key="connectionID">39</int>
-				</object>
-				<object class="IBConnectionRecord">
 					<object class="IBOutletConnection" key="connection">
 						<string key="label">_popUpButton</string>
 						<reference key="source" ref="1001"/>
@@ -514,6 +509,14 @@
 						<reference key="destination" ref="939006123"/>
 					</object>
 					<int key="connectionID">48</int>
+				</object>
+				<object class="IBConnectionRecord">
+					<object class="IBActionConnection" key="connection">
+						<string key="label">saveButtonPressed:</string>
+						<reference key="source" ref="1001"/>
+						<reference key="destination" ref="74831825"/>
+					</object>
+					<int key="connectionID">54</int>
 				</object>
 			</object>
 			<object class="IBMutableOrderedSet" key="objectRecords">
@@ -569,9 +572,10 @@
 							<reference ref="373130901"/>
 							<reference ref="868623835"/>
 							<reference ref="259680897"/>
+							<reference ref="167939923"/>
 							<reference ref="74831825"/>
 							<reference ref="939006123"/>
-							<reference ref="167939923"/>
+							<reference ref="251292360"/>
 						</object>
 						<reference key="parent" ref="352613259"/>
 					</object>
@@ -815,6 +819,11 @@
 						<reference key="object" ref="353584926"/>
 						<reference key="parent" ref="582938800"/>
 					</object>
+					<object class="IBObjectRecord">
+						<int key="objectID">53</int>
+						<reference key="object" ref="251292360"/>
+						<reference key="parent" ref="492987275"/>
+					</object>
 				</object>
 			</object>
 			<object class="NSMutableDictionary" key="flattenedProperties">
@@ -856,7 +865,6 @@
 					<string>31.IBPluginDependency</string>
 					<string>32.IBPluginDependency</string>
 					<string>33.IBPluginDependency</string>
-					<string>4.CustomClassName</string>
 					<string>4.IBPluginDependency</string>
 					<string>41.IBPluginDependency</string>
 					<string>42.IBPluginDependency</string>
@@ -864,6 +872,7 @@
 					<string>44.IBPluginDependency</string>
 					<string>45.IBPluginDependency</string>
 					<string>46.IBPluginDependency</string>
+					<string>53.IBPluginDependency</string>
 					<string>6.IBPluginDependency</string>
 					<string>7.IBPluginDependency</string>
 					<string>8.IBPluginDependency</string>
@@ -872,15 +881,15 @@
 				</object>
 				<object class="NSMutableArray" key="dict.values">
 					<bool key="EncodedWithXMLCoder">YES</bool>
-					<string>DraggingImageView</string>
+					<string>IconImageView</string>
 					<string>com.apple.InterfaceBuilder.CocoaPlugin</string>
-					<string>DraggingImageView</string>
+					<string>IconImageView</string>
 					<string>com.apple.InterfaceBuilder.CocoaPlugin</string>
-					<string>DraggingImageView</string>
+					<string>IconImageView</string>
 					<string>com.apple.InterfaceBuilder.CocoaPlugin</string>
-					<string>DraggingImageView</string>
+					<string>IconImageView</string>
 					<string>com.apple.InterfaceBuilder.CocoaPlugin</string>
-					<string>DraggingImageView</string>
+					<string>IconImageView</string>
 					<string>com.apple.InterfaceBuilder.CocoaPlugin</string>
 					<string>com.apple.InterfaceBuilder.CocoaPlugin</string>
 					<string>com.apple.InterfaceBuilder.CocoaPlugin</string>
@@ -907,7 +916,6 @@
 					<string>com.apple.InterfaceBuilder.CocoaPlugin</string>
 					<string>com.apple.InterfaceBuilder.CocoaPlugin</string>
 					<string>com.apple.InterfaceBuilder.CocoaPlugin</string>
-					<string>DraggingView</string>
 					<string>com.apple.InterfaceBuilder.CocoaPlugin</string>
 					<string>com.apple.InterfaceBuilder.CocoaPlugin</string>
 					<string>com.apple.InterfaceBuilder.CocoaPlugin</string>
@@ -918,7 +926,8 @@
 					<string>com.apple.InterfaceBuilder.CocoaPlugin</string>
 					<string>com.apple.InterfaceBuilder.CocoaPlugin</string>
 					<string>com.apple.InterfaceBuilder.CocoaPlugin</string>
-					<string>DraggingImageView</string>
+					<string>com.apple.InterfaceBuilder.CocoaPlugin</string>
+					<string>IconImageView</string>
 					<string>com.apple.InterfaceBuilder.CocoaPlugin</string>
 				</object>
 			</object>
@@ -938,59 +947,16 @@
 				</object>
 			</object>
 			<nil key="sourceID"/>
-			<int key="maxID">50</int>
+			<int key="maxID">54</int>
 		</object>
 		<object class="IBClassDescriber" key="IBDocument.Classes">
 			<object class="NSMutableArray" key="referencedPartialClassDescriptions">
 				<bool key="EncodedWithXMLCoder">YES</bool>
 				<object class="IBPartialClassDescription">
-					<string key="className">DraggingImageView</string>
-					<object class="IBClassDescriptionSource" key="sourceIdentifier">
-						<string key="majorKey">IBProjectSource</string>
-						<string key="minorKey">Classes/DraggingImageView/DraggingImageView-DraggingViewProtocol.h</string>
-					</object>
-				</object>
-				<object class="IBPartialClassDescription">
-					<string key="className">DraggingImageView</string>
-					<object class="IBClassDescriptionSource" key="sourceIdentifier">
-						<string key="majorKey">IBProjectSource</string>
-						<string key="minorKey">Classes/DraggingImageView/DraggingImageView-NSDraggingDestination.h</string>
-					</object>
-				</object>
-				<object class="IBPartialClassDescription">
-					<string key="className">DraggingImageView</string>
-					<object class="IBClassDescriptionSource" key="sourceIdentifier">
-						<string key="majorKey">IBProjectSource</string>
-						<string key="minorKey">Classes/DraggingImageView/DraggingImageView-NSNotification.h</string>
-					</object>
-				</object>
-				<object class="IBPartialClassDescription">
-					<string key="className">DraggingImageView</string>
-					<string key="superclassName">NSImageView</string>
-					<object class="IBClassDescriptionSource" key="sourceIdentifier">
-						<string key="majorKey">IBProjectSource</string>
-						<string key="minorKey">Classes/DraggingImageView/DraggingImageView.h</string>
-					</object>
-				</object>
-				<object class="IBPartialClassDescription">
-					<string key="className">DraggingView</string>
-					<object class="IBClassDescriptionSource" key="sourceIdentifier">
-						<string key="majorKey">IBProjectSource</string>
-						<string key="minorKey">Classes/DraggingView/DraggingView-DraggingViewProtocol.h</string>
-					</object>
-				</object>
-				<object class="IBPartialClassDescription">
 					<string key="className">DraggingView</string>
 					<object class="IBClassDescriptionSource" key="sourceIdentifier">
 						<string key="majorKey">IBProjectSource</string>
 						<string key="minorKey">Classes/DraggingView/DraggingView-NSDraggingDestination.h</string>
-					</object>
-				</object>
-				<object class="IBPartialClassDescription">
-					<string key="className">DraggingView</string>
-					<object class="IBClassDescriptionSource" key="sourceIdentifier">
-						<string key="majorKey">IBProjectSource</string>
-						<string key="minorKey">Classes/DraggingView/DraggingView-NSNotification.h</string>
 					</object>
 				</object>
 				<object class="IBPartialClassDescription">
@@ -1002,14 +968,22 @@
 					</object>
 				</object>
 				<object class="IBPartialClassDescription">
+					<string key="className">IconImageView</string>
+					<string key="superclassName">NSImageView</string>
+					<object class="IBClassDescriptionSource" key="sourceIdentifier">
+						<string key="majorKey">IBProjectSource</string>
+						<string key="minorKey">Classes/IconImageView/IconImageView.h</string>
+					</object>
+				</object>
+				<object class="IBPartialClassDescription">
 					<string key="className">MainWC</string>
 					<string key="superclassName">NSWindowController</string>
 					<object class="NSMutableDictionary" key="actions">
 						<bool key="EncodedWithXMLCoder">YES</bool>
 						<object class="NSArray" key="dict.sortedKeys">
 							<bool key="EncodedWithXMLCoder">YES</bool>
-							<string>buttonPressed:</string>
 							<string>popUpButtonValueChanged:</string>
+							<string>saveButtonPressed:</string>
 						</object>
 						<object class="NSMutableArray" key="dict.values">
 							<bool key="EncodedWithXMLCoder">YES</bool>
@@ -1021,17 +995,17 @@
 						<bool key="EncodedWithXMLCoder">YES</bool>
 						<object class="NSArray" key="dict.sortedKeys">
 							<bool key="EncodedWithXMLCoder">YES</bool>
-							<string>buttonPressed:</string>
 							<string>popUpButtonValueChanged:</string>
+							<string>saveButtonPressed:</string>
 						</object>
 						<object class="NSMutableArray" key="dict.values">
 							<bool key="EncodedWithXMLCoder">YES</bool>
 							<object class="IBActionInfo">
-								<string key="name">buttonPressed:</string>
+								<string key="name">popUpButtonValueChanged:</string>
 								<string key="candidateClassName">id</string>
 							</object>
 							<object class="IBActionInfo">
-								<string key="name">popUpButtonValueChanged:</string>
+								<string key="name">saveButtonPressed:</string>
 								<string key="candidateClassName">id</string>
 							</object>
 						</object>
@@ -1040,13 +1014,11 @@
 						<bool key="EncodedWithXMLCoder">YES</bool>
 						<object class="NSArray" key="dict.sortedKeys">
 							<bool key="EncodedWithXMLCoder">YES</bool>
-							<string>_draggingView</string>
 							<string>_messageLabel</string>
 							<string>_popUpButton</string>
 						</object>
 						<object class="NSMutableArray" key="dict.values">
 							<bool key="EncodedWithXMLCoder">YES</bool>
-							<string>DraggingView</string>
 							<string>NSTextField</string>
 							<string>NSPopUpButton</string>
 						</object>
@@ -1055,16 +1027,11 @@
 						<bool key="EncodedWithXMLCoder">YES</bool>
 						<object class="NSArray" key="dict.sortedKeys">
 							<bool key="EncodedWithXMLCoder">YES</bool>
-							<string>_draggingView</string>
 							<string>_messageLabel</string>
 							<string>_popUpButton</string>
 						</object>
 						<object class="NSMutableArray" key="dict.values">
 							<bool key="EncodedWithXMLCoder">YES</bool>
-							<object class="IBToOneOutletInfo">
-								<string key="name">_draggingView</string>
-								<string key="candidateClassName">DraggingView</string>
-							</object>
 							<object class="IBToOneOutletInfo">
 								<string key="name">_messageLabel</string>
 								<string key="candidateClassName">NSTextField</string>

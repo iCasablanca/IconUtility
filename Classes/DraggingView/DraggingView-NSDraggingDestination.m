@@ -7,7 +7,6 @@
 //
 
 #import "DraggingView-NSDraggingDestination.h"
-#import "DraggingView-NSNotification.h"
 #import "DraggingNotification.h"
 
 @implementation DraggingView (NSDraggingDestination)
@@ -26,13 +25,10 @@
 }
 
 - (BOOL)performDragOperation:(id < NSDraggingInfo >) sender{
-	//NSLog(@"%s", __FUNCTION__);
-	
 	NSPasteboard *pb = [sender draggingPasteboard];
 	
 	if ([NSImage canInitWithPasteboard:pb]){
-		NSImage *anImage = [[[NSImage alloc] initWithPasteboard:pb] autorelease];
-		_targetImage = [anImage retain];
+		self.targetImage = [[[NSImage alloc] initWithPasteboard:pb] autorelease];
 		return YES;
 	}
 	
@@ -40,7 +36,8 @@
 }
 
 - (void)concludeDragOperation:(id < NSDraggingInfo >) sender{
-	[self _postNotificationWithNotificationName:DraggingConcludedNotification];
+	NSNotification *aNotification = [NSNotification notificationWithName:DraggingConcludedNotification object:self];
+	[[NSNotificationCenter defaultCenter] postNotification:aNotification];
 	self.highlighted = NO;
 }
 

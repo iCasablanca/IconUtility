@@ -6,11 +6,9 @@
 //  Copyright 2010 boreal-kiss.com. All rights reserved.
 //
 
+#import <QuartzCore/CoreAnimation.h>
 #import "MainWC.h"
 #import "ViewManager.h"
-#import "DraggingView.h"
-#import <QuartzCore/CoreAnimation.h>
-
 #import "QualityManager.h"
 
 //Private
@@ -29,7 +27,6 @@ static NSString * const CautionString		= @"Drag images on the window.";
 
 @implementation MainWC
 @synthesize viewManager = _viewManager;
-@synthesize draggingView = _draggingView;
 @synthesize messageLabel = _messageLabel;
 @synthesize popUpButton = _popUpButton;
 @synthesize popUpButtonValues = _popUpButtonValues;
@@ -42,16 +39,14 @@ static NSString * const CautionString		= @"Drag images on the window.";
 	return [super initWithWindowNibName:[[self class] windowNibName]];
 }
 
--(void)windowDidLoad{
-	_viewManager = [[ViewManager alloc] initWithParentView:self.draggingView];
+-(void)awakeFromNib{
+	_viewManager = [[ViewManager alloc] initWithContentView:[[self window] contentView]];
 	[self _setupAnimations];
 	[self _createPopUpButtonMenuItems];
 }
 
--(IBAction)buttonPressed:(id)sender{
-	//NSLog(@"%s", __FUNCTION__);
-	
-	if ([self.viewManager saveImages]){
+-(IBAction)saveButtonPressed:(id)sender{
+	if ([self.viewManager saveImages:self]){
 		[self _showLabelWithTitle:ImagesDidSaveString textColor:[NSColor blueColor]];
 		return;
 	}
@@ -68,23 +63,18 @@ static NSString * const CautionString		= @"Drag images on the window.";
 	
 	switch (index) {
 		case 0:
-			//NSLog(@"Default");
 			[[QualityManager sharedInstance] setQuality:kCGInterpolationDefault];
 			break;
 		case 1:
-			//NSLog(@"None");
 			[[QualityManager sharedInstance] setQuality:kCGInterpolationNone];
 			break;
 		case 2:
-			//NSLog(@"Low");
 			[[QualityManager sharedInstance] setQuality:kCGInterpolationLow];
 			break;
 		case 3:
-			//NSLog(@"Medium");
 			[[QualityManager sharedInstance] setQuality:kCGInterpolationMedium];
 			break;
 		case 4:
-			//NSLog(@"High");
 			[[QualityManager sharedInstance] setQuality:kCGInterpolationHigh];
 			break;	
 		default:
@@ -97,7 +87,6 @@ static NSString * const CautionString		= @"Drag images on the window.";
 
 -(void)dealloc{
 	self.viewManager = nil;
-	self.draggingView = nil;
 	self.messageLabel = nil;
 	self.popUpButton = nil;
 	self.popUpButtonValues = nil;
@@ -108,8 +97,6 @@ static NSString * const CautionString		= @"Drag images on the window.";
 #pragma mark Private
 
 -(void)_createPopUpButtonMenuItems{
-	//NSLog(@"%s", __FUNCTION__);
-	
 	self.popUpButtonValues = [NSArray arrayWithObjects:@"Default", @"None", @"Low", @"Medium", @"High", nil];
 	
 	NSMenu *menu = [[[NSMenu alloc] init] autorelease];
@@ -122,11 +109,13 @@ static NSString * const CautionString		= @"Drag images on the window.";
 	[_popUpButton setMenu:menu];
 }
 
+//Animation part.
 -(void)_setupAnimations{
 	NSDictionary *animationDict = [NSDictionary dictionaryWithObjectsAndKeys:[self _fadeoutAnimation], @"alphaValue", nil];
 	[self.messageLabel setAnimations:animationDict];
 }
 
+//Animation part.
 -(void)_showLabelWithTitle:(NSString *)title textColor:(NSColor *)color{
 	if (color == nil){
 		[self.messageLabel setTextColor:[NSColor blackColor]];
@@ -142,14 +131,17 @@ static NSString * const CautionString		= @"Drag images on the window.";
 	[self _hideLabelAfterDelay:3.0];
 }
 
+//Animation part.
 -(void)_hideLabelAfterDelay:(NSTimeInterval)delay{
 	[self performSelector:@selector(_hideLabel) withObject:nil afterDelay:delay];
 }
 
+//Animation part.
 -(void)_hideLabel{
 	[[self.messageLabel animator] setAlphaValue:0.0];
 }
 
+//Animation part.
 -(CABasicAnimation *)_fadeoutAnimation{
 	CABasicAnimation *animation = [CABasicAnimation animation];
 	animation.duration = 0.5;

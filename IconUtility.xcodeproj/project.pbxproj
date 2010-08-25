@@ -12,6 +12,8 @@
 		8D11072D0486CEB800E47090 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 29B97316FDCFA39411CA2CEA /* main.m */; settings = {ATTRIBUTES = (); }; };
 		8D11072F0486CEB800E47090 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1058C7A1FEA54F0111CA2CBB /* Cocoa.framework */; };
 		9355A6A31200001A002C41A0 /* Credits.html in Resources */ = {isa = PBXBuildFile; fileRef = 9355A6A21200001A002C41A0 /* Credits.html */; };
+		937442A81225015C00594937 /* IconImageView.m in Sources */ = {isa = PBXBuildFile; fileRef = 937442A71225015C00594937 /* IconImageView.m */; };
+		937442AF1225036E00594937 /* DraggingView-NSDraggingDestination.m in Sources */ = {isa = PBXBuildFile; fileRef = 937442AE1225036E00594937 /* DraggingView-NSDraggingDestination.m */; };
 		938DAD961223C72500067FBB /* QualityManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 938DAD951223C72500067FBB /* QualityManager.m */; };
 		939ADB6D1223A72E00615465 /* MainWC.m in Sources */ = {isa = PBXBuildFile; fileRef = 939ADB6C1223A72E00615465 /* MainWC.m */; };
 		939ADB701223A74900615465 /* MainWC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 939ADB6F1223A74900615465 /* MainWC.xib */; };
@@ -22,13 +24,6 @@
 		93E74DED11EC3C5200D9F803 /* ViewManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 93E74DEC11EC3C5200D9F803 /* ViewManager.m */; };
 		93E74DF011EC3C9500D9F803 /* ViewManager-NSNotification.m in Sources */ = {isa = PBXBuildFile; fileRef = 93E74DEF11EC3C9500D9F803 /* ViewManager-NSNotification.m */; };
 		93E74E0D11EC42C800D9F803 /* DraggingView.m in Sources */ = {isa = PBXBuildFile; fileRef = 93E74E0C11EC42C800D9F803 /* DraggingView.m */; };
-		93E74E1011EC42EB00D9F803 /* DraggingView-NSDraggingDestination.m in Sources */ = {isa = PBXBuildFile; fileRef = 93E74E0F11EC42EB00D9F803 /* DraggingView-NSDraggingDestination.m */; };
-		93E74E2B11EC453200D9F803 /* DraggingView-DraggingViewProtocol.m in Sources */ = {isa = PBXBuildFile; fileRef = 93E74E2A11EC453200D9F803 /* DraggingView-DraggingViewProtocol.m */; };
-		93E74E3611EC485D00D9F803 /* DraggingImageView.m in Sources */ = {isa = PBXBuildFile; fileRef = 93E74E3511EC485D00D9F803 /* DraggingImageView.m */; };
-		93E74E3911EC489C00D9F803 /* DraggingImageView-NSDraggingDestination.m in Sources */ = {isa = PBXBuildFile; fileRef = 93E74E3811EC489C00D9F803 /* DraggingImageView-NSDraggingDestination.m */; };
-		93E74E3C11EC48CD00D9F803 /* DraggingImageView-DraggingViewProtocol.m in Sources */ = {isa = PBXBuildFile; fileRef = 93E74E3B11EC48CD00D9F803 /* DraggingImageView-DraggingViewProtocol.m */; };
-		93E74E4111EC4A6E00D9F803 /* DraggingImageView-NSNotification.m in Sources */ = {isa = PBXBuildFile; fileRef = 93E74E4011EC4A6E00D9F803 /* DraggingImageView-NSNotification.m */; };
-		93E74EF311EC587600D9F803 /* DraggingView-NSNotification.m in Sources */ = {isa = PBXBuildFile; fileRef = 93E74EF211EC587600D9F803 /* DraggingView-NSNotification.m */; };
 		93E74F5D11EC63B100D9F803 /* Icons.plist in Resources */ = {isa = PBXBuildFile; fileRef = 93E74F5C11EC63B100D9F803 /* Icons.plist */; };
 		93E750F511EC9C5600D9F803 /* NSBitmapImageRep-Additions.m in Sources */ = {isa = PBXBuildFile; fileRef = 93E750F411EC9C5600D9F803 /* NSBitmapImageRep-Additions.m */; };
 		93E751F311ECB31900D9F803 /* IconUtility.icns in Resources */ = {isa = PBXBuildFile; fileRef = 93E751F211ECB31900D9F803 /* IconUtility.icns */; };
@@ -46,6 +41,10 @@
 		8D1107310486CEB800E47090 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		8D1107320486CEB800E47090 /* IconUtility.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = IconUtility.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9355A6A21200001A002C41A0 /* Credits.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = Credits.html; sourceTree = "<group>"; };
+		937442A61225015C00594937 /* IconImageView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IconImageView.h; sourceTree = "<group>"; };
+		937442A71225015C00594937 /* IconImageView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IconImageView.m; sourceTree = "<group>"; };
+		937442AD1225036E00594937 /* DraggingView-NSDraggingDestination.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "DraggingView-NSDraggingDestination.h"; sourceTree = "<group>"; };
+		937442AE1225036E00594937 /* DraggingView-NSDraggingDestination.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "DraggingView-NSDraggingDestination.m"; sourceTree = "<group>"; };
 		938DAD941223C72500067FBB /* QualityManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QualityManager.h; sourceTree = "<group>"; };
 		938DAD951223C72500067FBB /* QualityManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QualityManager.m; sourceTree = "<group>"; };
 		939ADB6B1223A72E00615465 /* MainWC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainWC.h; sourceTree = "<group>"; };
@@ -62,23 +61,8 @@
 		93E74DEC11EC3C5200D9F803 /* ViewManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewManager.m; sourceTree = "<group>"; };
 		93E74DEE11EC3C9500D9F803 /* ViewManager-NSNotification.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "ViewManager-NSNotification.h"; sourceTree = "<group>"; };
 		93E74DEF11EC3C9500D9F803 /* ViewManager-NSNotification.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "ViewManager-NSNotification.m"; sourceTree = "<group>"; };
-		93E74DF211EC402B00D9F803 /* DraggingViewProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DraggingViewProtocol.h; sourceTree = "<group>"; };
 		93E74E0B11EC42C800D9F803 /* DraggingView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DraggingView.h; sourceTree = "<group>"; };
 		93E74E0C11EC42C800D9F803 /* DraggingView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DraggingView.m; sourceTree = "<group>"; };
-		93E74E0E11EC42EB00D9F803 /* DraggingView-NSDraggingDestination.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "DraggingView-NSDraggingDestination.h"; sourceTree = "<group>"; };
-		93E74E0F11EC42EB00D9F803 /* DraggingView-NSDraggingDestination.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "DraggingView-NSDraggingDestination.m"; sourceTree = "<group>"; };
-		93E74E2911EC453200D9F803 /* DraggingView-DraggingViewProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "DraggingView-DraggingViewProtocol.h"; sourceTree = "<group>"; };
-		93E74E2A11EC453200D9F803 /* DraggingView-DraggingViewProtocol.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "DraggingView-DraggingViewProtocol.m"; sourceTree = "<group>"; };
-		93E74E3411EC485D00D9F803 /* DraggingImageView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DraggingImageView.h; sourceTree = "<group>"; };
-		93E74E3511EC485D00D9F803 /* DraggingImageView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DraggingImageView.m; sourceTree = "<group>"; };
-		93E74E3711EC489C00D9F803 /* DraggingImageView-NSDraggingDestination.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "DraggingImageView-NSDraggingDestination.h"; sourceTree = "<group>"; };
-		93E74E3811EC489C00D9F803 /* DraggingImageView-NSDraggingDestination.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "DraggingImageView-NSDraggingDestination.m"; sourceTree = "<group>"; };
-		93E74E3A11EC48CD00D9F803 /* DraggingImageView-DraggingViewProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "DraggingImageView-DraggingViewProtocol.h"; sourceTree = "<group>"; };
-		93E74E3B11EC48CD00D9F803 /* DraggingImageView-DraggingViewProtocol.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "DraggingImageView-DraggingViewProtocol.m"; sourceTree = "<group>"; };
-		93E74E3F11EC4A6E00D9F803 /* DraggingImageView-NSNotification.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "DraggingImageView-NSNotification.h"; sourceTree = "<group>"; };
-		93E74E4011EC4A6E00D9F803 /* DraggingImageView-NSNotification.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "DraggingImageView-NSNotification.m"; sourceTree = "<group>"; };
-		93E74EF111EC587600D9F803 /* DraggingView-NSNotification.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "DraggingView-NSNotification.h"; sourceTree = "<group>"; };
-		93E74EF211EC587600D9F803 /* DraggingView-NSNotification.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "DraggingView-NSNotification.m"; sourceTree = "<group>"; };
 		93E74F5C11EC63B100D9F803 /* Icons.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Icons.plist; sourceTree = "<group>"; };
 		93E750F311EC9C5600D9F803 /* NSBitmapImageRep-Additions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSBitmapImageRep-Additions.h"; sourceTree = "<group>"; };
 		93E750F411EC9C5600D9F803 /* NSBitmapImageRep-Additions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSBitmapImageRep-Additions.m"; sourceTree = "<group>"; };
@@ -167,6 +151,15 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		937442A51225015100594937 /* IconImageView */ = {
+			isa = PBXGroup;
+			children = (
+				937442A61225015C00594937 /* IconImageView.h */,
+				937442A71225015C00594937 /* IconImageView.m */,
+			);
+			path = IconImageView;
+			sourceTree = "<group>";
+		};
 		938DAD931223C72500067FBB /* QualityManager */ = {
 			isa = PBXGroup;
 			children = (
@@ -197,12 +190,11 @@
 		93B74B8011EB3BFD00A49D8A /* Classes */ = {
 			isa = PBXGroup;
 			children = (
+				937442A51225015100594937 /* IconImageView */,
 				938DAD931223C72500067FBB /* QualityManager */,
 				939ADB6A1223A71B00615465 /* MainWC */,
 				93E750F211EC9C4300D9F803 /* NSBitmapImageRep-Additions */,
-				93E74E3311EC485300D9F803 /* DraggingImageView */,
 				93E74E0A11EC42B200D9F803 /* DraggingView */,
-				93E74DF111EC3FF200D9F803 /* DraggingViewProtocol */,
 				93E74DEA11EC3C4A00D9F803 /* ViewManager */,
 				93E74DE611EC3C0000D9F803 /* DraggingNotification */,
 				93B74B8111EB3BFD00A49D8A /* AppDelegate */,
@@ -250,42 +242,15 @@
 			path = ViewManager;
 			sourceTree = "<group>";
 		};
-		93E74DF111EC3FF200D9F803 /* DraggingViewProtocol */ = {
-			isa = PBXGroup;
-			children = (
-				93E74DF211EC402B00D9F803 /* DraggingViewProtocol.h */,
-			);
-			path = DraggingViewProtocol;
-			sourceTree = "<group>";
-		};
 		93E74E0A11EC42B200D9F803 /* DraggingView */ = {
 			isa = PBXGroup;
 			children = (
+				937442AD1225036E00594937 /* DraggingView-NSDraggingDestination.h */,
+				937442AE1225036E00594937 /* DraggingView-NSDraggingDestination.m */,
 				93E74E0B11EC42C800D9F803 /* DraggingView.h */,
 				93E74E0C11EC42C800D9F803 /* DraggingView.m */,
-				93E74E0E11EC42EB00D9F803 /* DraggingView-NSDraggingDestination.h */,
-				93E74E0F11EC42EB00D9F803 /* DraggingView-NSDraggingDestination.m */,
-				93E74E2911EC453200D9F803 /* DraggingView-DraggingViewProtocol.h */,
-				93E74E2A11EC453200D9F803 /* DraggingView-DraggingViewProtocol.m */,
-				93E74EF111EC587600D9F803 /* DraggingView-NSNotification.h */,
-				93E74EF211EC587600D9F803 /* DraggingView-NSNotification.m */,
 			);
 			path = DraggingView;
-			sourceTree = "<group>";
-		};
-		93E74E3311EC485300D9F803 /* DraggingImageView */ = {
-			isa = PBXGroup;
-			children = (
-				93E74E3411EC485D00D9F803 /* DraggingImageView.h */,
-				93E74E3511EC485D00D9F803 /* DraggingImageView.m */,
-				93E74E3711EC489C00D9F803 /* DraggingImageView-NSDraggingDestination.h */,
-				93E74E3811EC489C00D9F803 /* DraggingImageView-NSDraggingDestination.m */,
-				93E74E3A11EC48CD00D9F803 /* DraggingImageView-DraggingViewProtocol.h */,
-				93E74E3B11EC48CD00D9F803 /* DraggingImageView-DraggingViewProtocol.m */,
-				93E74E3F11EC4A6E00D9F803 /* DraggingImageView-NSNotification.h */,
-				93E74E4011EC4A6E00D9F803 /* DraggingImageView-NSNotification.m */,
-			);
-			path = DraggingImageView;
 			sourceTree = "<group>";
 		};
 		93E74F5B11EC626700D9F803 /* Resources */ = {
@@ -370,17 +335,12 @@
 				93E74DED11EC3C5200D9F803 /* ViewManager.m in Sources */,
 				93E74DF011EC3C9500D9F803 /* ViewManager-NSNotification.m in Sources */,
 				93E74E0D11EC42C800D9F803 /* DraggingView.m in Sources */,
-				93E74E1011EC42EB00D9F803 /* DraggingView-NSDraggingDestination.m in Sources */,
-				93E74E2B11EC453200D9F803 /* DraggingView-DraggingViewProtocol.m in Sources */,
-				93E74E3611EC485D00D9F803 /* DraggingImageView.m in Sources */,
-				93E74E3911EC489C00D9F803 /* DraggingImageView-NSDraggingDestination.m in Sources */,
-				93E74E3C11EC48CD00D9F803 /* DraggingImageView-DraggingViewProtocol.m in Sources */,
-				93E74E4111EC4A6E00D9F803 /* DraggingImageView-NSNotification.m in Sources */,
-				93E74EF311EC587600D9F803 /* DraggingView-NSNotification.m in Sources */,
 				93E750F511EC9C5600D9F803 /* NSBitmapImageRep-Additions.m in Sources */,
 				93E0CEAC11ED8F9F000195C7 /* ViewManager-SaveImages.m in Sources */,
 				939ADB6D1223A72E00615465 /* MainWC.m in Sources */,
 				938DAD961223C72500067FBB /* QualityManager.m in Sources */,
+				937442A81225015C00594937 /* IconImageView.m in Sources */,
+				937442AF1225036E00594937 /* DraggingView-NSDraggingDestination.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

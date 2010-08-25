@@ -7,11 +7,15 @@
 //
 
 #import <Cocoa/Cocoa.h>
-#import "DraggingViewProtocol.h"
 
-@interface DraggingView : NSView <DraggingViewProtocol>{
-	BOOL _highlighted;
+/**
+ * Drag&Drop detecting view fully convered on the main window's content view.
+ */
+@interface DraggingView : NSView{
 	NSImage *_targetImage;
+	BOOL _highlighted;
 }
+@property (nonatomic, retain) NSImage *targetImage;
 @property (nonatomic, assign) BOOL highlighted;
+
 @end

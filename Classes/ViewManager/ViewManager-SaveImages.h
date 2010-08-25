@@ -13,5 +13,6 @@
  * Save functionalities.
  */
 @interface ViewManager (SaveImages)
--(BOOL)saveImages;
+
+-(BOOL)saveImages:(id)sender;
 @end
