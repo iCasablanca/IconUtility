@@ -271,14 +271,18 @@
 							<array>
 								<string>29B97314FDCFA39411CA2CEA</string>
 								<string>93B74B8011EB3BFD00A49D8A</string>
+								<string>93B74B8111EB3BFD00A49D8A</string>
 								<string>29B97317FDCFA39411CA2CEA</string>
+								<string>089C165CFE840E0CC02AAC07</string>
+								<string>1DDD58140DA1D0A300B32029</string>
 								<string>1C37FABC05509CD000000102</string>
 							</array>
 							<key>PBXSmartGroupTreeModuleOutlineStateSelectionKey</key>
 							<array>
 								<array>
-									<integer>17</integer>
-									<integer>12</integer>
+									<integer>21</integer>
+									<integer>20</integer>
+									<integer>14</integer>
 									<integer>0</integer>
 								</array>
 							</array>
@@ -318,7 +322,7 @@
 								<key>PBXProjectModuleGUID</key>
 								<string>1CE0B20306471E060097A5F4</string>
 								<key>PBXProjectModuleLabel</key>
-								<string>MainWC.m</string>
+								<string>InfoPlist.strings</string>
 								<key>PBXSplitModuleInNavigatorKey</key>
 								<dict>
 									<key>Split0</key>
@@ -326,43 +330,43 @@
 										<key>PBXProjectModuleGUID</key>
 										<string>1CE0B20406471E060097A5F4</string>
 										<key>PBXProjectModuleLabel</key>
-										<string>MainWC.m</string>
+										<string>InfoPlist.strings</string>
 										<key>_historyCapacity</key>
 										<integer>0</integer>
 										<key>bookmark</key>
-										<string>937443A9122514C600594937</string>
+										<string>931938BD128D77A4008F616F</string>
 										<key>history</key>
 										<array>
 											<string>93E7521211ECB7CE00D9F803</string>
 											<string>93E0CEF611EDC334000195C7</string>
 											<string>933614F011EDFC860011CA98</string>
 											<string>93C1885A120401B90056F610</string>
-											<string>93C1885C120401B90056F610</string>
 											<string>939ADB431223A28600615465</string>
-											<string>938DADD21223CA3800067FBB</string>
 											<string>938DADEA1223D31500067FBB</string>
 											<string>9374433412250EF000594937</string>
 											<string>9374433512250EF000594937</string>
 											<string>9374433612250EF000594937</string>
-											<string>9374433712250EF000594937</string>
-											<string>9374433812250EF000594937</string>
 											<string>9374433912250EF000594937</string>
 											<string>9374433C12250EF000594937</string>
 											<string>9374433D12250EF000594937</string>
 											<string>9374434012250EF000594937</string>
-											<string>9374434112250EF000594937</string>
-											<string>9374434212250EF000594937</string>
-											<string>9374434D1225105B00594937</string>
-											<string>9374434E1225105B00594937</string>
-											<string>9374434F1225105B00594937</string>
-											<string>937443501225105B00594937</string>
-											<string>937443511225105B00594937</string>
 											<string>937443521225105B00594937</string>
 											<string>9374435B122510B700594937</string>
 											<string>9374435C122510B700594937</string>
 											<string>9374435D122510B700594937</string>
 											<string>9374435E122510B700594937</string>
-											<string>937443731225132300594937</string>
+											<string>93180D3912578F5A00EB8F23</string>
+											<string>93180D3A12578F5A00EB8F23</string>
+											<string>93180D3B12578F5A00EB8F23</string>
+											<string>93180D3C12578F5A00EB8F23</string>
+											<string>93180D3D12578F5A00EB8F23</string>
+											<string>93180D3E12578F5A00EB8F23</string>
+											<string>93180D3F12578F5A00EB8F23</string>
+											<string>935D45D3126C40C10015EA6B</string>
+											<string>935D45D4126C40C10015EA6B</string>
+											<string>931938BA128D77A4008F616F</string>
+											<string>931938BB128D77A4008F616F</string>
+											<string>931938BC128D77A4008F616F</string>
 										</array>
 									</dict>
 									<key>SplitCount</key>
@@ -420,9 +424,9 @@
 			</array>
 			<key>TableOfContents</key>
 			<array>
-				<string>9374437C1225135000594937</string>
+				<string>931938BE128D77A4008F616F</string>
 				<string>1CE0B1FE06471DED0097A5F4</string>
-				<string>9374437D1225135000594937</string>
+				<string>931938BF128D77A4008F616F</string>
 				<string>1CE0B20306471E060097A5F4</string>
 				<string>1CE0B20506471E060097A5F4</string>
 			</array>
@@ -560,11 +564,7 @@
 	<integer>5</integer>
 	<key>WindowOrderList</key>
 	<array>
-		<string>9374439D1225143600594937</string>
-		<string>9374439E1225143600594937</string>
-		<string>1CD10A99069EF8BA00B06720</string>
 		<string>9384ED6111EB652E009B86CC</string>
-		<string>1C78EAAD065D492600B07095</string>
 		<string>/Users/keijinlove/Documents/Xcode/Cocoa/App002_IconUtility/IconUtility/IconUtility.xcodeproj</string>
 	</array>
 	<key>WindowString</key>
@@ -645,7 +645,7 @@
 			<key>TableOfContents</key>
 			<array>
 				<string>9384ED6111EB652E009B86CC</string>
-				<string>9374437E1225135000594937</string>
+				<string>931938C0128D77A4008F616F</string>
 				<string>1CD0528F0623707200166675</string>
 				<string>XCMainBuildResultsModuleGUID</string>
 			</array>
